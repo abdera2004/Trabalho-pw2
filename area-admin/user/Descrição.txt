@@ -1,3 +1,4 @@
+<<<<<<< HEAD:area-admin/user/Descrição.txt
 index: Exibição de Dados
 
 Process: fazer os processamentos da tela salvar as validar as informação
@@ -50,3 +51,6 @@ link de estudos https://igorescobar.github.io/jQuery-Mask-Plugin/
 5 - Mostrar Como subir a imagem no campo de img
 mostrar arquivo js
 ---------------------------------------------------------------------------------
+=======
+REsposnável pela criação das Telas parte por parte.
+>>>>>>> 6fc7c134c93b0f9dbe01303b05ce65d0c98bd184:Descrição.txt
