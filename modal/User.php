@@ -61,7 +61,14 @@ class User{
             if($novo_nome == ""){
                 $novo_nome = md5(time()). ".jpg";
             }
-            $diretorio = "../../";
+            $diretorio = "../../img/user/padrao.png";
+
+            $nomeCompleto = $diretorio.$novo_nome;
+
+            move_uploaded_file($_FILES['foto']['tmp_name'], $nomeCompleto);
+            return $novo_nome;
+        }else{
+            return $novo_nome;
         }
     }
 }
