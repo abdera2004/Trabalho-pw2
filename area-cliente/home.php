@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FilmeOn - Home</title>
-  <link rel="short icon" href="./../img/site/logo.png" />
+  <?php
+  include('./../componentes/titulo.php');
+  ?>
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- icon Booststrap -->
@@ -16,7 +18,7 @@
 
 <body style="justify-content: center; align-items: center; height: 100vh ">
 
-  <div class="container-fluid container00" style="background-color: #000000;">
+  <div class="container-fluid container00" style="background-image: url(../img/site/fundo-neon.jpg);">
     <div class="container">
       <?php 
         include('./../componentes/header-cliente.php');
@@ -32,7 +34,7 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid container00" style="background-color: #000000;">
+  <div class="container-fluid container00" style="background-image: url(../img/site/fundo-neon2.jpg);">
     <div class="container titlePadding" data-aos="fade-down" data-aos-duration="1500">
       <p class="h1 ">Filmes de Ficção</p>
       <p class="h5" id="lauchComing">Resistência é aposta na mescla de ficção científica e filmes de guerra</p>

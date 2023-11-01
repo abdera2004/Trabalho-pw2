@@ -1,0 +1,1 @@
+<link rel="short icon" href="../img//site/icone.png"/>
