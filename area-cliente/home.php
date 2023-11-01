@@ -16,7 +16,7 @@
 
 <body style="justify-content: center; align-items: center; height: 100vh ">
 
-  <div class="container-fluid container00 container01">
+  <div class="container-fluid container00" style="background-color: #000000;">
     <div class="container">
       <?php 
         include('./../componentes/header-cliente.php');
@@ -32,7 +32,7 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid container00 container02">
+  <div class="container-fluid container00" style="background-color: #000000;">
     <div class="container titlePadding" data-aos="fade-down" data-aos-duration="1500">
       <p class="h1 ">Filmes de Ficção</p>
       <p class="h5" id="lauchComing">Resistência é aposta na mescla de ficção científica e filmes de guerra</p>
