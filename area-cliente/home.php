@@ -23,7 +23,7 @@
       ?>
     </div>
     <div class="container titlePadding" data-aos="fade-up" data-aos-duration="1500">
-      <p class="h5" id="lauchComing">Filmes mais assistidos</p>
+      <p class="h5" id="lauchComing">O melhor lugar para os gamers</p>
       <p class="h1">Melhores Filmes de 2023.</p>
       <button type="button" class="btn btn-outline-light mt-5" id="button">SAIBA MAIS</button>
 

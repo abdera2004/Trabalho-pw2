@@ -12,7 +12,7 @@
       </ul>
       <div class="text-end">
         <a type="button" class="btn btn-outline-light me-2" href="./login.php">Login</a>
-        <a type="button" class="btn btn-warning" href="./cadastro.php">Sign-up</a>
+        <a type="button" style="background-color: green;" class="btn " href="./cadastro.php">Sign-up</a>
       </div>
     </div>
   </div>
