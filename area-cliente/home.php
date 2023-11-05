@@ -26,7 +26,7 @@
     </div>
     <div class="container titlePadding" data-aos="fade-up" data-aos-duration="1500">
       <p class="h5" id="lauchComing">O melhor lugar para os gamers</p>
-      <p class="h1">Melhores Filmes de 2023.</p>
+      <p class="h1">Os melhores games da atualidade!</p>
       <button type="button" class="btn btn-outline-light mt-5" id="button">SAIBA MAIS</button>
 
       <div class="container text-center">
@@ -34,10 +34,10 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid container00" style="background-image: url(../img/site/fundo-neon2.jpg);">
+  <div class="container-fluid container00" style="background-image: url(../img/site/xbox.jpg);">
     <div class="container titlePadding" data-aos="fade-down" data-aos-duration="1500">
-      <p class="h1 ">Filmes de Ficção</p>
-      <p class="h5" id="lauchComing">Resistência é aposta na mescla de ficção científica e filmes de guerra</p>
+      <p class="h1 ">Games de todas as categorias</p>
+      <p class="h5" id="lauchComing">Mergulhe neste mundo!</p>
       <a type="button" class="btn btn-outline-light mt-5" id="button">SAIBA MAIS</a>
     </div>
   </div>

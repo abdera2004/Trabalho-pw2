@@ -5,9 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FilmeOn - Adm</title>
-  <?php
-  include('./../componentes/titulo.php');
-  ?>
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- icon -->
@@ -80,6 +77,13 @@
                     <input type="password" class="form-control" name="senha" maxlength="10" id="senha" required>
                     <div class="invalid-feedback">
                       Senha precisa ser preenchida!
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="senha" class="col-form-label">Telefone:</label>
+                    <input type="tel" class="form-control" name="tel" maxlength="10" id="tel" required required data-mask="(00)00000-0000"  data-mask-selectonfocus="true">
+                    <div class="invalid-feedback">
+                      Telefone precisa ser preenchido!
                     </div>
                   </div>
                 </div>

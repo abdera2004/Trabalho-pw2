@@ -16,9 +16,9 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body style="justify-content: center; align-items: center; height: 100vh ">
+<body style="justify-content: center; align-items: center; height: 100vh; background-image: url(../img/site/fundo-neon3.jpg);">
 
-  <div class="container-fluid  container00 container01 ">
+  <div class="container-fluid  container00">
     <div class="container">
       <?php 
         include('./../componentes/header-cliente.php');

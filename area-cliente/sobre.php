@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body style="justify-content: center; align-items: center; height: 100vh ">
+<body style="justify-content: center; align-items: center; height: 100vh; background-image: url(../img/site/fundo-neon4.jpg);">
 
   <div class="container-fluid h-100 container00 container01">
     <div class="container">

@@ -16,9 +16,9 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body style="justify-content: center; align-items: center; height: 100vh ">
+<body style="justify-content: center; align-items: center; height: 100vh; background-image: url(../img/site/fundo-neon2.jpg);">
 
-  <div class="container-fluid container00 container02">
+  <div class="container-fluid container00">
     <div class="container">
       <?php 
         include('./../componentes/header-cliente.php');
@@ -44,13 +44,11 @@
     </div>
   </div>
 
-
-  <?php 
-      include('./../componentes/footer-cliente.php');
-  ?>
+<?php 
+  include('./../componentes/footer-cliente.php');
+?>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
   </script>
 </body>
-
 </html>

@@ -1,6 +1,6 @@
 <footer class="container-fluid footer w-100">
-  <a href="#" target="blank" class="me-4">Ruan © 2023</a>
-  <a href="../area-admin/login.php" target="blank" class="me-4">admin</a>
+  <a href="#" target="blank" class="me-4">© 2023 Control Games. Todos os direitos reservados.</a>
+  <a href="../area-admin/login.php" target="blank" class="me-4">Admin</a>
   <img class="icone" src="../img/site/instagram.png">
   <img class="icone" src="../img/site/youtube.png">
   <img class="icone" src="../img/site/twitter.png">
@@ -9,7 +9,7 @@
 <style>
 .footer{
   background-color: #000000;
-  height: 15vh;
+  height: 30vh;
   font-size: 12px;
   font-weight: 500;
   display: flex;
