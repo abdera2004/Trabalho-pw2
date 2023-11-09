@@ -1,5 +1,5 @@
 <?php 
-  require_once("../../componentes/modal.php");
+  require_once("../../componentes/model.php");
   require_once '../../dao/UserDao.php';
   if(!empty($_POST)){
     $id_User = $userDao['idUser'];
