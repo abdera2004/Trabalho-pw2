@@ -5,7 +5,7 @@ class Conexao{
     public static function conectar(){
 
         $servidor="localhost";
-        $banco="filmeOn";
+        $banco="controlGames";
         $usuario="root";
         $senha="";
 

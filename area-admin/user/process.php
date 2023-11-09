@@ -1,26 +1,83 @@
 <?php
-echo '<pre>';
-print_r($_POST);
-echo '</pre>';
+ require_once '../../dao/UserDao.php';
+ require_once '../../model/User.php';
+ require_once '../../model/Mensagem.php';
 
-echo $_FILES['foto']['name']. "<BR>";
-/* $_FILES: É um superglobal em PHP que armazena as informações dos arquivos enviados por um formulário.
+ $user = new User();
+ $msg = new Mensagem();
 
-'foto': É o nome do campo do formulário no qual o arquivo foi enviado. Este nome deve corresponder ao name do campo de entrada no formulário HTML.
-name : É a chave usada para acessar o nome do arquivo.
-'size': É a chave usada para acessar o tamanho do arquivo.
- */
+  //var_dump($_POST); 
 
 
+ switch ($_POST["acao"]) {
+  case 'DELETE':
+   try {
+        $userDao = UserDao::delete($_POST['idDeletar']);
+        header("Location: index.php");
+    } catch (Exception $e) {
+      echo 'Exceção capturada: ',  $e->getMessage(), "\n";
+    }
+    break;
+
+  case 'SALVAR':
+    //pode validar as informações
+    $user->setNome($_POST['nome']);
+    $user->setSobrenome($_POST['sobrenome']);
+    $user->setCpf($_POST['cpf']);
+    $user->setNasc($_POST['nasc']);
+    $user->setEmail($_POST['email']);
+    $user->setPassword($_POST['senha']);
+    $user->setImagem($user->salvarImagem($_POST['nomeFoto'])); 
+    $user->setToken($user->generateToken());
+    try {
+      $userDao = UserDao::insert($user);
+      $msg->setMensagem("Usuário Salvo com sucesso.", "bg-success");
+      header("Location: index.php");
+    } catch (Exception $e) {
+     // echo 'Exceção capturada: ',  $e->getMessage(), "\n";
+      $msg->setMensagem("Verifique os dados Digitados.", "bg-danger");
+      header("Location: register.php");
+    } 
+    break;
+  case 'ATUALIZAR':
+        //pode validar as informações
+        $user->setNome($_POST['nome']);
+        $user->setSobrenome($_POST['sobrenome']);
+        $user->setCpf($_POST['cpf']);
+        $user->setNasc($_POST['nasc']);
+        $user->setEmail($_POST['email']);
+        $user->setPassword($_POST['senha']);
+        $user->setImagem($user->salvarImagem($_POST['nomeFoto'])); 
+        $user->setToken($user->generateToken());
+        try {
+          $userDao = UserDao::update($_POST["idUser"], $user);
+          $msg->setMensagem("Usuário Atualizado com sucesso.", "bg-success");
+          header("Location: index.php");
+        } catch (Exception $e) {
+         echo 'Exceção capturada: ',  $e->getMessage(), "\n";
+
+        } 
+    break;
+
+  case 'SELECTID':
+
+    try {
+        $userDao = UserDao::selectById($_POST['id']);
+        // Configura as opções do contexto da solicitação
+        include('register.php');
+    } catch (Exception $e) {
+        echo 'Exceção capturada: ',  $e->getMessage(), "\n";
+    } 
+
+  
+    break;
+
+
+  }
 
 
 
 
-
-/*     switch ($_POST["acao"]) {
-      case 'Salvar' : 
-        echo ('Inserir');
-        break;
-      } */
+ 
 
 ?>
