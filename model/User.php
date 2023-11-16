@@ -85,7 +85,7 @@ class User{
             if($novo_nome == ""){
                 $novo_nome = md5(time()). ".jpg";
             }
-            $diretorio = "../../img/user/padrao.png";
+            $diretorio = "../../img/user/";
 
             $nomeCompleto = $diretorio.$novo_nome;
 

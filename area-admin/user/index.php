@@ -93,7 +93,7 @@
           <form action="process.php" method="post">
             <input type="hidden" class="form-control" id="idDeletar" name="idDeletar" type="text">
             <input type="hidden" class="form-control" value="DELETE" name="acao" type="text">
-            <p>Tem certeza que deseja excluir o item selcionado?
+            <p>Tem certeza que deseja excluir o item selcionado?</p>
             <div class=" text-end">
               <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Não</button>
               <button type="submit" class="btn btn-warning ms-3">Sim </button>

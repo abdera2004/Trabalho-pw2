@@ -52,9 +52,9 @@
           <form method="post" action="process.php" enctype="multipart/form-data" class="needs-validation" novalidate>
             <div class="card-header">
               <strong>INFORMAÇÕES DO USUÁRIO</strong>
-              <input type="hidden" name="idUser" id="idUser" placeholder="id" value="<?=$id_User?>">
-              <input type="hidden" name="nomeFoto" id="nomeFoto" placeholder="nome foto" value="<?=$imagem_User?>">
-              <input type="hidden" value="<?=$id_User?'ATUALIZAR':'SALVAR'?>" name="acao" >
+              <input type="text" name="idUser" id="idUser" placeholder="id" value="<?=$id_User?>">
+              <input type="text" name="nomeFoto" id="nomeFoto" placeholder="nome foto" value="<?=$imagem_User?>">
+              <input type="text" value="<?=$id_User?'ATUALIZAR':'SALVAR'?>" name="acao" >
 
             </div>
             <div class="card-body row" style="align-items: center; justify-content: center;">
