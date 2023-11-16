@@ -20,6 +20,30 @@ class User{
         $this->nome = $nome;
     }
 
+    public function getCpf(){
+        return $this->cpf;
+    }
+
+    public function setCpf($cpf){
+        $this->cpf = $cpf;
+    }
+
+    public function getImagem(){
+        return $this->imagem;
+    }
+
+    public function setImagem($imagem){
+        $this->imagem = $imagem;
+    }
+
+    public function getToken(){
+        return $this->token;
+    }
+
+    public function setToken($token){
+        $this->token = $token;
+    }
+
     public function getSobrenome(){
         return $this->sobrenome;
     }

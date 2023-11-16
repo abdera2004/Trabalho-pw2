@@ -4,7 +4,7 @@
  require_once '../../model/Mensagem.php';
 
  $user = new User();
- $msg = new Mensagem();
+ $msg = new Mensagem($msg);
 
   //var_dump($_POST); 
 
