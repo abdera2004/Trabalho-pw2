@@ -5,7 +5,7 @@ class Conexao{
     public static function conectar(){
 
         $servidor="localhost";
-        $banco="bdLoja";
+        $banco="bdloja";
         $usuario="root";
         $senha="";
 

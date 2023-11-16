@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FilmeOn - Contato</title>
+  <title>Control Games | Contato</title>
   <?php
   include('./../componentes/titulo.php');
   ?>

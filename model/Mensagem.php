@@ -1,7 +1,12 @@
 <?php
 
-$msg = "oi";
+class Mensagem{
 
-var_dump($msg);
+public $msg;
 
+public function setMensagem($msg){
+    $this->msg = $msg;
+}
+
+}
 ?>
