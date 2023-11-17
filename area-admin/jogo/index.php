@@ -1,7 +1,7 @@
 <?php 
 
   require_once '../../dao/jogoDao.php'; 
-  $jogos = UserDao::selectAll();
+  $jogos = JogoDao::selectAll();
 ?>
 
 <!DOCTYPE html>
@@ -31,7 +31,7 @@
       <div class="col-md-10  p-4 borber">
         <div class="row align-items-center mb-4">
           <div class="col fs-3 fw-semibold">
-            Lista de Usuário
+            Lista de Jogos
           </div>
           <div class="col text-end ">
             <a class="btn btn-success px-3" role="button" aria-disabled="true" href="register.php"><i
@@ -42,32 +42,32 @@
           <table class="table table-hover">
             <thead>
               <tr>
-                <th class="col-md-1">ID</th>
-                <th class="col-md-1">Nascimento</th>
-                <th class="col-md-3">Nome </th>
+                <th class="col-md-1">Cod</th>
+                <th class="col-md-1">Nome</th>
+                <th class="col-md-3">Genero</th>
                 <th class="col-md-3">E-mail</th>
                 <th class="col-md-2">CPF</th>
                 <th class="text-center col-md-1">Alterar</th>
                 <th class="text-center col-md-1">Excluir</th>
               </tr>
-              <?php foreach($users as $user) { ?>
+              <?php foreach($jogos as $jogo) { ?>
               <tr>
-                <td><?=$user[0]?></td>
-                <td><?= date('d/m/Y', strtotime($user[4]));  ?></td>
-                <td><?=$user[1]?> <?=$user[2]?></td>
-                <td><?=$user[5]?></td>
-                <td><?=$user[3]?></td>
+                <td><?=$jogo[0]?></td>
+                <td><?= date('d/m/Y', strtotime($jogo[4]));  ?></td>
+                <td><?=$jogo[1]?> <?=$jogo[2]?></td>
+                <td><?=$jogo[5]?></td>
+                <td><?=$jogo[3]?></td>
                 <td class="text-center">
                   <form action="process.php" method="POST">
                     <input type="hidden" class="form-control" id="acao" name="acao" value="SELECTID">
-                    <input type="hidden" class="form-control" id="id" name="id" value="<?=$user[0]?>">
+                    <input type="hidden" class="form-control" id="id" name="id" value="<?=$jogo[0]?>">
                     <button type="submit" class="dropdown-item" ><i
                         class="fas fa-edit fa-lg text-secondary"></i>
                     </button>
                   </form>
                 </td>
                 <td class="text-center ">
-                  <a class="dropdown-item" onclick="modalRemover(<?=$user[0]?>,'idDeletar')">
+                  <a class="dropdown-item" onclick="modalRemover(<?=$jogo[0]?>,'idDeletar')">
                     <i class="fas fa-trash-alt fa-lg text-danger" style="cursor: pointer;"></i>
                   </a>
                 </td>

@@ -1,6 +1,6 @@
 <?php
 
-require_once '../model/Conexao.php';
+    require_once '../../model/Conexao.php';
 
     class JogoDao{
         public static function insert($jogo){
@@ -39,26 +39,25 @@ require_once '../model/Conexao.php';
         }
         public static function update($cod, $jogo){
             $conexao = Conexao::conectar();
-            $query = "UPDATE tbuser SET 
-            codJogo = ?, 
+            $query = "UPDATE tbjogo SET 
             nomeJogo = ?, 
             generoJogo  = ?,
             plataformaJogo = ?, 
             precoJogo = ?, 
-            tamanhoJogo = ? 
+            tamanhoJogo = ?
             WHERE codJogo = ?";
             $stmt = $conexao->prepare($query);
-            $stmt->bindValue(1, $jogo->getCod());
-            $stmt->bindValue(2, $jogo->getnomeJogo());
-            $stmt->bindValue(3, $jogo->getGenero());
-            $stmt->bindValue(4, $jogo->getPlataforma());
-            $stmt->bindValue(5, $jogo->getPreco());
-            $stmt->bindValue(6, $jogo->getTamanho());
+            $stmt->bindValue(1, $jogo->getNome());
+            $stmt->bindValue(2, $jogo->getGenero());
+            $stmt->bindValue(3, $jogo->getPlataforma());
+            $stmt->bindValue(4, $jogo->getPreco());
+            $stmt->bindValue(5, $jogo->getTamanho());
+            $stmt->bindValue(6, $cod);
             return $stmt->execute();
         }
         public static function checkCredentials($email, $senha){
             $conexao = Conexao::conectar();
-            $query = "SELECT * FROM tbuser WHERE emailUser = ? and passwordUser = ?";
+            $query = "SELECT * FROM tbuser WHERE codAdm = ?";
             $stmt = $conexao->prepare($query);
             $stmt->bindValue(1, $email);
             $stmt->bindValue(2, $senha);
@@ -67,7 +66,4 @@ require_once '../model/Conexao.php';
         }
 
     }
-?>
-    }
-
 ?>
