@@ -68,7 +68,7 @@
                 </td>
                 <td class="text-center ">
                   <a class="dropdown-item" onclick="modalRemover(<?=$user[0]?>,'idDeletar')">
-                    <i class="fas fa-trash-alt fa-lg text-danger"></i>
+                    <i class="fas fa-trash-alt fa-lg text-danger" style="cursor: pointer;"></i>
                   </a>
                 </td>
               <tr>
@@ -113,6 +113,7 @@
   <!-- Para usar Mascara  -->
   <script type="text/javascript" src="./../../js/jquery.mask.min.js"></script>
   <script type="text/javascript" src="./../../js/modal.js"></script>
+  <script type="text/javascript" src="./../../js/personalizar.js"></script>
 </body>
 
 </html>
