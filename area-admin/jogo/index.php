@@ -45,8 +45,9 @@
                 <th class="col-md-1">Cod</th>
                 <th class="col-md-1">Nome</th>
                 <th class="col-md-3">Genero</th>
-                <th class="col-md-3">E-mail</th>
-                <th class="col-md-2">CPF</th>
+                <th class="col-md-3">Plataforma(s)</th>
+                <th class="col-md-2">Preço</th>
+                <th class="col-md-2">Tamanho</th>
                 <th class="text-center col-md-1">Alterar</th>
                 <th class="text-center col-md-1">Excluir</th>
               </tr>
