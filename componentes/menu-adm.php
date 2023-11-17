@@ -9,7 +9,7 @@
         User</a>
     </li>
     <li class="fw-medium my-1">
-      <a class="link-dark" href="../user" style="text-decoration: none;"><i class="fa fa-gamepad"></i>
+      <a class="link-dark" href="../jogo" style="text-decoration: none;"><i class="fa fa-gamepad"></i>
         Jogos</a>
     </li>
   </ul>
