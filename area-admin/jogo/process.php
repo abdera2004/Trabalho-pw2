@@ -6,7 +6,6 @@
  $jogo = new Jogo();
  $msg = new Mensagem();
 
-  //var_dump($_POST); 
 
 
  switch ($_POST["acao"]) {
@@ -30,12 +29,10 @@
     $jogo->setData($_POST['data']); 
     try {
       $jogoDao = JogoDao::insert($jogo);
-      $msg->setMensagem("Usuário Salvo com sucesso.", "bg-success");
-      header("Location: index.php");
+     header("Location: index.php");
     } catch (Exception $e) {
      // echo 'Exceção capturada: ',  $e->getMessage(), "\n";
-      $msg->setMensagem("Verifique os dados Digitados.", "bg-danger");
-      header("Location: register-jogo.php");
+     header("Location: register-jogo.php");
     } 
     break;
   case 'ATUALIZAR':

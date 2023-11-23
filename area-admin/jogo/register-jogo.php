@@ -108,7 +108,7 @@
                   </div>
                   <div class="col-md-3">
                     <label for="nasc" class="col-form-label">Data de lançamento:</label>
-                    <input type="date" class="form-control" name="nasc" id="nasc" value="<?=$data_Jogo?>" required>
+                    <input type="date" class="form-control" name="data" id="data" value="<?=$data_Jogo?>" required>
                     <div class="invalid-feedback">
                       Data Inválida
                     </div>
