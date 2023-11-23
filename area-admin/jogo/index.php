@@ -45,19 +45,22 @@
                 <th class="col-md-1">Cod</th>
                 <th class="col-md-1">Nome</th>
                 <th class="col-md-3">Genero</th>
-                <th class="col-md-3">Plataforma(s)</th>
-                <th class="col-md-2">Preço</th>
-                <th class="col-md-2">Tamanho</th>
+                <th class="col-md-2">Plataforma(s)</th>
+                <th class="col-md-1">Preço</th>
+                <th class="col-md-1">Tamanho</th>
+                <th class="col-md-2">Data de lançamento</th>
                 <th class="text-center col-md-1">Alterar</th>
                 <th class="text-center col-md-1">Excluir</th>
               </tr>
               <?php foreach($jogos as $jogo) { ?>
               <tr>
                 <td><?=$jogo[0]?></td>
-                <td><?= date('d/m/Y', strtotime($jogo[4]));  ?></td>
-                <td><?=$jogo[1]?> <?=$jogo[2]?></td>
-                <td><?=$jogo[5]?></td>
+                <td><?=$jogo[1]?></td>
+                <td><?=$jogo[2]?></td>
                 <td><?=$jogo[3]?></td>
+                <td><?=$jogo[4]?></td>
+                <td><?=$jogo[5]?></td>
+                <td><?= date('d/m/Y', strtotime($jogo[4]));  ?></td>
                 <td class="text-center">
                   <form action="process.php" method="POST">
                     <input type="hidden" class="form-control" id="acao" name="acao" value="SELECTID">
