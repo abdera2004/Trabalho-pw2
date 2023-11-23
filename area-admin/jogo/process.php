@@ -26,7 +26,8 @@
     $jogo->setPlataforma($_POST['plataforma']);
     $jogo->setPreco($_POST['preco']);
     $jogo->setTamanho($_POST['tamanho']);
-    $jogo->setImagem($jogo->salvarImagem($_POST['nomeFoto'])); 
+    $jogo->setImagem($jogo->salvarImagem($_POST['nomeFoto']));
+    $jogo->setData($_POST['data']); 
     try {
       $jogoDao = JogoDao::insert($jogo);
       $msg->setMensagem("Usuário Salvo com sucesso.", "bg-success");
@@ -34,7 +35,7 @@
     } catch (Exception $e) {
      // echo 'Exceção capturada: ',  $e->getMessage(), "\n";
       $msg->setMensagem("Verifique os dados Digitados.", "bg-danger");
-      header("Location: register.php");
+      header("Location: register-jogo.php");
     } 
     break;
   case 'ATUALIZAR':
@@ -44,7 +45,8 @@
         $jogo->setPlataforma($_POST['plataforma']);
         $jogo->setPreco($_POST['preco']);
         $jogo->setTamanho($_POST['tamanho']);
-        $jogo->setImagem($jogo->salvarImagem($_POST['nomeFoto'])); 
+        $jogo->setImagem($jogo->salvarImagem($_POST['nomeFoto']));
+        $jogo->setData($_POST['data']);
         try {
           $jogoDao = JogoDao::update($_POST["codJogo"], $jogo);
           $msg->setMensagem("Jogo Atualizado com sucesso.", "bg-success");
@@ -60,7 +62,7 @@
     try {
         $jogoDao = JogoDao::selectById($_POST['cod']);
         // Configura as opções do contexto da solicitação
-        include('register.php');
+        include('register-jogo.php');
     } catch (Exception $e) {
         echo 'Exceção capturada: ',  $e->getMessage(), "\n";
     } 

@@ -9,6 +9,7 @@
     $preco_Jogo= $JogoDao['precoJogo'];
     $tamanho_Jogo = $JogoDao['tamanhoJogo'];
     $imagem_Jogo = $JogoDao['imagemJogo'];
+    $data_Jogo = $JogoDao['dataJogo'];
     }else{
       $nome_Jogo = '';
       $genero_Jogo = '';
@@ -16,6 +17,7 @@
       $preco_Jogo = '';
       $tamanho_Jogo = '';
       $imagem_Jogo = '';
+      $data_Jogo = '';
       $cod_Jogo = '';
     }
 
@@ -98,10 +100,17 @@
                   </div>
                   <div class="col-md-6">
                     <label for="tamanho" class="col-form-label">Tamanho:</label>
-                    <input type="email" class="form-control" name="tamanho" maxlength="100" value="<?=$tamanho_Jogo?>"
+                    <input type="text" class="form-control" name="tamanho" maxlength="100" value="<?=$tamanho_Jogo?>"
                       id="tamanho" required>
                     <div class="invalid-feedback">
                       Tamanho Inválido
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="nasc" class="col-form-label">Data de lançamento:</label>
+                    <input type="date" class="form-control" name="nasc" id="nasc" value="<?=$data_Jogo?>" required>
+                    <div class="invalid-feedback">
+                      Data Inválida
                     </div>
                   </div>
                 </div>

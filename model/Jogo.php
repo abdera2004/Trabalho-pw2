@@ -2,7 +2,7 @@
 
 class Jogo{
 
-    public $cod, $nomeJogo, $genero, $plataforma, $preco, $tamanho, $imagem;
+    public $cod, $nomeJogo, $genero, $plataforma, $preco, $tamanho, $imagem, $data;
 
     public function getCod(){
         return $this->cod;
@@ -52,8 +52,20 @@ class Jogo{
         $this->tamanho = $tamanho;
     }
     
+    public function getImagem(){
+        return $this->imagem;
+    }
+
     public function setImagem($imagem){
         $this->imagem = $imagem;
+    }
+
+    public function getData(){
+        return $this->data;
+    }
+
+    public function setData($data){
+        $this->data = $data;
     }
 
     public function salvarImagem($novo_nome){
