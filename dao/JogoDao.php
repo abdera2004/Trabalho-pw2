@@ -5,7 +5,7 @@
     class JogoDao{
         public static function insert($jogo){
             $conexao = Conexao::conectar();
-            $query = "INSERT INTO tbjogo (codJogo, nomeJogo, generoJogo, plataformaJogo, precoJogo, tamanhoJogo) VALUES (?,?,?,?,?,?)";
+            $query = "INSERT INTO tbjogo (codJogo, nomeJogo, generoJogo, plataformaJogo, precoJogo, tamanhoJogo, imagemJogo) VALUES (?,?,?,?,?,?,?)";
             $stmt = $conexao->prepare($query);
             $stmt->bindValue(1, $jogo->getCod());
             $stmt->bindValue(2, $jogo->getnomeJogo());
@@ -13,6 +13,7 @@
             $stmt->bindValue(4, $jogo->getPlataforma());
             $stmt->bindValue(5, $jogo->getPreco());
             $stmt->bindValue(6, $jogo->getTamanho());
+            $stmt->bindValue(7, $jogo->getImagem());
             $stmt->execute();
         }
         public static function selectAll(){
@@ -44,7 +45,8 @@
             generoJogo  = ?,
             plataformaJogo = ?, 
             precoJogo = ?, 
-            tamanhoJogo = ?
+            tamanhoJogo = ?,
+            imagemJogo = ?
             WHERE codJogo = ?";
             $stmt = $conexao->prepare($query);
             $stmt->bindValue(1, $jogo->getNome());
@@ -52,7 +54,8 @@
             $stmt->bindValue(3, $jogo->getPlataforma());
             $stmt->bindValue(4, $jogo->getPreco());
             $stmt->bindValue(5, $jogo->getTamanho());
-            $stmt->bindValue(6, $cod);
+            $stmt->bindValue(6, $jogo->getImagem());
+            $stmt->bindValue(7, $cod);
             return $stmt->execute();
         }
         public static function checkCredentials($email, $senha){

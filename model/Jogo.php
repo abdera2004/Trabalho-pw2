@@ -2,7 +2,7 @@
 
 class Jogo{
 
-    public $cod, $nomeJogo, $genero, $plataforma, $preco, $tamanho;
+    public $cod, $nomeJogo, $genero, $plataforma, $preco, $tamanho, $imagem;
 
     public function getCod(){
         return $this->cod;
@@ -50,6 +50,26 @@ class Jogo{
 
     public function setTamanho($tamanho){
         $this->tamanho = $tamanho;
+    }
+    
+    public function setImagem($imagem){
+        $this->imagem = $imagem;
+    }
+
+    public function salvarImagem($novo_nome){
+        if(empty($_FILES['foto']['size']) != 1){
+            if($novo_nome == ""){
+                $novo_nome = md5(time()). ".jpg";
+            }
+            $diretorio = "../../img/jogo/";
+
+            $nomeCompleto = $diretorio.$novo_nome;
+
+            move_uploaded_file($_FILES['foto']['tmp_name'], $nomeCompleto);
+            return $novo_nome;
+        }else{
+            return $novo_nome;
+        }
     }
 }
 

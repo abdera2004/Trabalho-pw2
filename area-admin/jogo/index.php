@@ -34,7 +34,7 @@
             Lista de Jogos
           </div>
           <div class="col text-end ">
-            <a class="btn btn-success px-3" role="button" aria-disabled="true" href="register.php"><i
+            <a class="btn btn-success px-3" role="button" aria-disabled="true" href="register-jogo.php"><i
                 class="fas fa-plus" aria-hidden="true"></i></a>
           </div>
         </div>

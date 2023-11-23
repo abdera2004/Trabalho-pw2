@@ -8,12 +8,15 @@
     $plataforma_Jogo = $JogoDao['plataformaJogo'];
     $preco_Jogo= $JogoDao['precoJogo'];
     $tamanho_Jogo = $JogoDao['tamanhoJogo'];
+    $imagem_Jogo = $JogoDao['imagemJogo'];
     }else{
       $nome_Jogo = '';
       $genero_Jogo = '';
       $plataforma_Jogo = '';
       $preco_Jogo = '';
       $tamanho_Jogo = '';
+      $imagem_Jogo = '';
+      $cod_Jogo = '';
     }
 
 ?>
@@ -45,16 +48,16 @@
         <div class="card">
           <form method="post" action="process.php" enctype="multipart/form-data" class="needs-validation" novalidate>
             <div class="card-header">
-              <strong>INFORMAÇÕES DO USUÁRIO</strong>
-              <input type="text" name="idUser" id="idUser" placeholder="id" value="<?=$id_User?>">
-              <input type="text" name="nomeFoto" id="nomeFoto" placeholder="nome foto" value="<?=$imagem_User?>">
-              <input type="text" value="<?=$id_User?'ATUALIZAR':'SALVAR'?>" name="acao" >
+              <strong>INFORMAÇÕES DO JOGO</strong>
+              <input type="text" name="codjogo" id="idUser" placeholder="id" value="<?=$cod_Jogo?>">
+              <input type="text" name="nomeFoto" id="nomeFoto" placeholder="nome foto" value="<?=$imagem_Jogo?>">
+              <input type="text" value="<?=$cod_Jogo?'ATUALIZAR':'SALVAR'?>" name="acao" >
 
             </div>
             <div class="card-body row" style="align-items: center; justify-content: center;">
               <div class="col-md-2   text-center" >
                 <div class="bg-white rounded border" >
-                  <img id="preview" src="../../img/user/<?=$imagem_User!="" ? $imagem_User : 'padrao.png';?>" alt="..."
+                  <img id="preview" src="../../img/jogo/<?=$imagem_Jogo!="" ? $imagem_Jogo : 'padrao.png';?>" alt="..."
                     class="rounded  w-100  "  style="height:200px; object-fit: cover; border:4px solid #ccc" >
                 </div>
               </div>
@@ -62,51 +65,43 @@
                 <div class="row">
                   <div class="col-md-3 mb-3">
                     <label for="nome" class="col-form-label">Nome:</label>
-                    <input type="text" class="form-control" name="nome" maxlength="50" id="nome" value="<?=$nome_User?>"
+                    <input type="text" class="form-control" name="nome" maxlength="50" id="nome" value="<?=$nome_Jogo?>"
                       required>
                     <div class="invalid-feedback">
                       Nome Inválido
                     </div>
                   </div>
                   <div class="col-md-6 mb-3">
-                    <label for="sobrenome" class="col-form-label">Sobrenome:</label>
-                    <input type="text" class="form-control" name="sobrenome" maxlength="50" id="sobrenome"
-                      value="<?=$sobrenome_User?>" required>
+                    <label for="genero" class="col-form-label">Gênero:</label>
+                    <input type="text" class="form-control" name="genero" maxlength="50" id="genero"
+                      value="<?=$genero_Jogo?>" required>
                     <div class="invalid-feedback">
-                      Sobrenome Inválido
+                      Gênero Inválido
                     </div>
                   </div>
                   <div class="col-md-3 mb-3">
-                    <label for="cpf" class="col-form-label">CPF:</label>
-                    <input type="text" class="form-control" name="cpf" maxlength="50" id="cpf"
-                      data-mask="000.000.000-00" data-mask-selectonfocus="true" value="<?=$cpf_User?>" required>
+                    <label for="plataforma" class="col-form-label">Plataforma:</label>
+                    <input type="text" class="form-control" name="plataforma" maxlength="50" id="plataforma"
+                      value="<?=$plataforma_Jogo?>" required>
                     <div class="invalid-feedback">
-                      CPF Inválido
+                      Plataforma Inválida
                     </div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-md-3">
-                    <label for="nasc" class="col-form-label">Data de Nascimento:</label>
-                    <input type="date" class="form-control" name="nasc" id="nasc" value="<?=$nasc_User?>" required>
+                    <label for="preco" class="col-form-label">Preço:</label>
+                    <input type="text" class="form-control" name="preco" id="preco" value="<?=$preco_Jogo?>"  data-mask="R$ 000,00" data-mask-selectonfocus="true" value="<?=$preco_Jogo?>" required>
                     <div class="invalid-feedback">
-                      Data Inválido
+                      Preço Inválido
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <label for="email" class="col-form-label">Email:</label>
-                    <input type="email" class="form-control" name="email" maxlength="100" value="<?=$email_User?>"
-                      id="email" required>
+                    <label for="tamanho" class="col-form-label">Tamanho:</label>
+                    <input type="email" class="form-control" name="tamanho" maxlength="100" value="<?=$tamanho_Jogo?>"
+                      id="tamanho" required>
                     <div class="invalid-feedback">
-                      E-mail Inválido
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <label for="senha" class="col-form-label">Senha:</label>
-                    <input type="password" class="form-control" name="senha" value="<?=$password_User?>" maxlength="10"
-                      id="senha" required>
-                    <div class="invalid-feedback">
-                      Senha Inválido
+                      Tamanho Inválido
                     </div>
                   </div>
                 </div>
