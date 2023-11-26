@@ -1,6 +1,7 @@
 <?php 
   require_once("../../componentes/modal.php");
   require_once '../../dao/JogoDao.php';
+
   if(!empty($_POST)){
     $cod_Jogo = $JogoDao['codJogo'];
     $nome_Jogo =  $JogoDao['nomeJogo'];
@@ -93,7 +94,7 @@
                 <div class="row">
                   <div class="col-md-3">
                     <label for="preco" class="col-form-label">Preço:</label>
-                    <input type="text" class="form-control" name="preco" id="preco" value="<?=$preco_Jogo?>"  data-mask="R$ 000,00" data-mask-selectonfocus="true" value="<?=$preco_Jogo?>" required>
+                    <input type="text" class="form-control" name="preco" id="preco" value="<?=$preco_Jogo?>"  data-mask="R$ 000.00" data-mask-selectonfocus="true" value="<?=$preco_Jogo?>" required>
                     <div class="invalid-feedback">
                       Preço Inválido
                     </div>

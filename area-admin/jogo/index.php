@@ -43,10 +43,10 @@
             <thead>
               <tr>
                 <th class="col-md-1">Cod</th>
-                <th class="col-md-1">Nome</th>
-                <th class="col-md-3">Genero</th>
-                <th class="col-md-2">Plataforma(s)</th>
-                <th class="col-md-1">Preço</th>
+                <th class="col-md-3">Nome</th>
+                <th class="col-md-2">Genero</th>
+                <th class="col-md-3">Plataforma(s)</th>
+                <th class="col-md-2">Preço</th>
                 <th class="col-md-1">Tamanho</th>
                 <th class="col-md-2">Data de lançamento</th>
                 <th class="text-center col-md-1">Alterar</th>
