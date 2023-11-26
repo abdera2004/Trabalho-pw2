@@ -12,5 +12,9 @@
       <a class="link-dark" href="../jogo" style="text-decoration: none;"><i class="fa fa-gamepad"></i>
         Jogos</a>
     </li>
+    <li class="fw-medium my-1">
+      <a class="link-dark" href="../pagamento" style="text-decoration: none;"><i class="fa fa-money-bill"></i>
+        Pagamento</a>
+    </li>
   </ul>
 </div>

@@ -1,9 +1,9 @@
 <?php
- require_once '../../dao/UserDao.php';
- require_once '../../model/User.php';
+ require_once '../../dao/PagamentoDao.php';
+ require_once '../../model/Pagamento.php';
  require_once '../../model/Mensagem.php';
 
- $user = new User();
+ $pagamento = new Pagamento();
  $msg = new Mensagem();
 
   //var_dump($_POST); 
@@ -12,7 +12,7 @@
  switch ($_POST["acao"]) {
   case 'DELETE':
    try {
-        $userDao = UserDao::delete($_POST['idDeletar']);
+        $pagamentoDao = PagamentoDao::delete($_POST['idDeletar']);
         header("Location: index.php");
     } catch (Exception $e) {
       echo 'Exceção capturada: ',  $e->getMessage(), "\n";
@@ -21,16 +21,9 @@
 
   case 'SALVAR':
     //pode validar as informações
-    $user->setNome($_POST['nome']);
-    $user->setSobrenome($_POST['sobrenome']);
-    $user->setCpf($_POST['cpf']);
-    $user->setNasc($_POST['nasc']);
-    $user->setEmail($_POST['email']);
-    $user->setPassword($_POST['senha']);
-    $user->setImagem($user->salvarImagem($_POST['nomeFoto'])); 
-    $user->setToken($user->generateToken());
+    $pagamento->setDesc($_POST['nome']);
     try {
-      $userDao = UserDao::insert($user);
+      $pagamentoDao = PagamentoDao::insert($pagamento);
       $msg->setMensagem("Usuário Salvo com sucesso.", "bg-success");
       header("Location: index.php");
     } catch (Exception $e) {
@@ -41,16 +34,9 @@
     break;
   case 'ATUALIZAR':
         //pode validar as informações
-        $user->setNome($_POST['nome']);
-        $user->setSobrenome($_POST['sobrenome']);
-        $user->setCpf($_POST['cpf']);
-        $user->setNasc($_POST['nasc']);
-        $user->setEmail($_POST['email']);
-        $user->setPassword($_POST['senha']);
-        $user->setImagem($user->salvarImagem($_POST['nomeFoto'])); 
-        $user->setToken($user->generateToken());
+        $pagamento->setDesc($_POST['nome']);
         try {
-          $userDao = UserDao::update($_POST["idUser"], $user);
+          $pagamentoDao = PagamentoDao::update($_POST["codPagamento"], $pagamento);
           $msg->setMensagem("Usuário Atualizado com sucesso.", "bg-success");
           header("Location: index.php");
         } catch (Exception $e) {
@@ -62,7 +48,7 @@
   case 'SELECTID':
 
     try {
-        $userDao = UserDao::selectById($_POST['id']);
+        $pagamentoDao = PagamentoDao::selectById($_POST["codPagamento"]);
         // Configura as opções do contexto da solicitação
         include('register.php');
     } catch (Exception $e) {
