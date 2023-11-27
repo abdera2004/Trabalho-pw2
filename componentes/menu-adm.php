@@ -20,5 +20,9 @@
       <a class="link-dark" href="../adm" style="text-decoration: none;"><i class="fa fa-user"></i>
         Adm</a>
     </li>
+    <li class="fw-medium my-1">
+      <a class="link-dark" href="../teladm" style="text-decoration: none;"><i class="fa fa-phone"></i>
+        Adm</a>
+    </li>
   </ul>
 </div>
