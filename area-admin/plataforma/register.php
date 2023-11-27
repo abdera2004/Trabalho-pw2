@@ -1,12 +1,12 @@
 <?php 
   require_once("../../componentes/modal.php");
-  require_once '../../dao/PagamentoDao.php';
+  require_once '../../dao/PlataformaDao.php';
   if(!empty($_POST)){
-    $cod_Pagamento = $pagamentoDao['codPagamento'];
-    $desc_Pagamento =  $pagamentoDao['descFormaPagamento'];
+    $cod_Plataforma = $plataformaDao['codPlataformaJogo'];
+    $desc_Plataforma =  $plataformaDao['descPlataformaJogo'];
     }else{
-      $desc_Pagamento = '';
-      $cod_Pagamento = '';
+      $desc_Plataforma = '';
+      $cod_Plataforma = '';
     }
 ?>
 
@@ -38,9 +38,9 @@
         <div class="card">
           <form method="post" action="process.php" enctype="multipart/form-data" class="needs-validation" novalidate>
             <div class="card-header">
-              <strong>INFORMAÇÕES DO PAGAMENTO</strong>
-              <input type="text" name="codPagamento" id="codPagamento" placeholder="codPagamento" value="<?=$cod_Pagamento?>">
-              <input type="text" value="<?=$cod_Pagamento?'ATUALIZAR':'SALVAR'?>" name="acao">
+              <strong>INFORMAÇÕES DA PLATAFORMA</strong>
+              <input type="text" name="codPlataformaJogo" id="codPlataformaJogo" placeholder="codPlataformaJogo" value="<?=$cod_Plataforma?>">
+              <input type="text" value="<?=$cod_Plataforma?'ATUALIZAR':'SALVAR'?>" name="acao">
             </div>
             <div class="card-body row" style="align-items: center; justify-content: center;">
               <div class="col-md-1 text-center">
@@ -49,7 +49,7 @@
                 <div class="row">
                   <div class="col-md-3 mb-3">
                     <label for="nome" class="col-form-label">Descrição:</label>
-                    <input type="text" class="form-control" name="nome" maxlength="50" id="nome" value="<?=$desc_Pagamento?>"  required>
+                    <input type="text" class="form-control" name="nome" maxlength="50" id="nome" value="<?=$desc_Plataforma?>"  required>
                     <div class="invalid-feedback">
                       Nome Inválido
                     </div>

@@ -25,7 +25,7 @@
         Telefone</a>
     </li>
     <li class="fw-medium my-1">
-      <a class="link-dark" href="../teladm" style="text-decoration: none;"><i class="fa fa-gamepad"></i>
+      <a class="link-dark" href="../plataforma" style="text-decoration: none;"><i class="fa fa-gamepad"></i>
         Plataforma</a>
     </li>
   </ul>
