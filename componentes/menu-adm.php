@@ -16,5 +16,9 @@
       <a class="link-dark" href="../pagamento" style="text-decoration: none;"><i class="fa fa-money-bill"></i>
         Pagamento</a>
     </li>
+    <li class="fw-medium my-1">
+      <a class="link-dark" href="../adm" style="text-decoration: none;"><i class="fa fa-user"></i>
+        Adm</a>
+    </li>
   </ul>
 </div>

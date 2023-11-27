@@ -1,6 +1,6 @@
-<?php
-  require_once '../../dao/PagamentoDao.php';
-  $pagamentos = PagamentoDao::selectAll();
+<?php 
+  require_once '../../dao/AdmDao.php'; 
+  $adms = AdmDao::selectAll();
 ?>
 
 <!DOCTYPE html>
@@ -27,10 +27,10 @@
       <?php 
       include('./../../componentes/menu-adm.php');
       ?>
-      <div class="col-md-10 p-4 borber">
+      <div class="col-md-10  p-4 borber">
         <div class="row align-items-center mb-4">
           <div class="col fs-3 fw-semibold">
-            Lista de formas de pagamento
+            Lista de Administradores
           </div>
           <div class="col text-end ">
             <a class="btn btn-success px-3" role="button" aria-disabled="true" href="register.php"><i
@@ -42,25 +42,31 @@
             <thead>
               <tr>
                 <th class="col-md-1">ID</th>
-                <th class="col-md-1">Nome</th>
+                <th class="col-md-1">Nascimento</th>
+                <th class="col-md-3">Nome </th>
+                <th class="col-md-3">E-mail</th>
+                <th class="col-md-2">CPF</th>
                 <th class="text-center col-md-1">Alterar</th>
                 <th class="text-center col-md-1">Excluir</th>
               </tr>
-              <?php foreach($pagamentos as $pagamento) { ?>
+              <?php foreach($adms as $adm) { ?>
               <tr>
-                <td><?=$pagamento[0]?></td>
-                <td><?=$pagamento[1]?></td>
+                <td><?=$adm[0]?></td>
+                <td><?= date('d/m/Y', strtotime($adm[4]));  ?></td>
+                <td><?=$adm[1]?> <?=$adm[2]?></td>
+                <td><?=$adm[5]?></td>
+                <td><?=$adm[3]?></td>
                 <td class="text-center">
                   <form action="process.php" method="POST">
                     <input type="hidden" class="form-control" id="acao" name="acao" value="SELECTID">
-                    <input type="hidden" class="form-control" id="id" name="id" value="<?=$pagamento[0]?>">
+                    <input type="hidden" class="form-control" id="id" name="id" value="<?=$adm[0]?>">
                     <button type="submit" class="dropdown-item" ><i
                         class="fas fa-edit fa-lg text-secondary"></i>
                     </button>
                   </form>
                 </td>
                 <td class="text-center ">
-                  <a class="dropdown-item" onclick="modalRemover(<?=$pagamento[0]?>,'idDeletar')">
+                  <a class="dropdown-item" onclick="modalRemover(<?=$adm[0]?>,'idDeletar')">
                     <i class="fas fa-trash-alt fa-lg text-danger" style="cursor: pointer;"></i>
                   </a>
                 </td>
@@ -79,14 +85,14 @@
     <div class=" modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header bg-danger text-white">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Excluir Item</h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Excluir Usuário</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body  ">
           <form action="process.php" method="post">
             <input type="hidden" class="form-control" id="idDeletar" name="idDeletar" type="text">
             <input type="hidden" class="form-control" value="DELETE" name="acao" type="text">
-            <p>Tem certeza que deseja excluir o item selecionado?</p>
+            <p>Tem certeza que deseja excluir o item selcionado?</p>
             <div class=" text-end">
               <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Não</button>
               <button type="submit" class="btn btn-warning ms-3">Sim </button>
@@ -108,5 +114,4 @@
   <script type="text/javascript" src="./../../js/modal.js"></script>
   <script type="text/javascript" src="./../../js/personalizar.js"></script>
 </body>
-
 </html>

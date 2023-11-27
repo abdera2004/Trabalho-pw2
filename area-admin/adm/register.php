@@ -1,24 +1,24 @@
 <?php 
   require_once("../../componentes/modal.php");
-  require_once '../../dao/UserDao.php';
+  require_once '../../dao/AdmDao.php';
   if(!empty($_POST)){
-    $id_User = $userDao['idUser'];
-    $nome_User =  $userDao['nomeUser'];
-    $sobrenome_User = $userDao['sobrenomeUser'];
-    $cpf_User = $userDao['cpfUser'];
-    $nasc_User= $userDao['nascUser'];
-    $email_User = $userDao['emailUser'];
-    $password_User = $userDao['passwordUser'];
-    $imagem_User = $userDao['imagemUser'];
+    $id_Adm = $admDao['idAdm'];
+    $nome_Adm =  $admDao['nomeAdm'];
+    $sobrenome_Adm = $admDao['sobrenomeAdm'];
+    $cpf_Adm = $admDao['cpfAdm'];
+    $nasc_Adm = $admDao['nascAdm'];
+    $email_Adm = $admDao['emailAdm'];
+    $password_Adm = $admDao['passwordAdm'];
+    $imagem_Adm = $admDao['imagemAdm'];
     }else{
-      $nome_User = '';
-      $sobrenome_User = '';
-      $cpf_User = '';
-      $nasc_User= '';
-      $email_User = '';
-      $password_User = '';
-      $imagem_User = '';
-      $id_User = '';
+      $nome_Adm = '';
+      $sobrenome_Adm = '';
+      $cpf_Adm = '';
+      $nasc_Adm= '';
+      $email_Adm = '';
+      $password_Adm = '';
+      $imagem_Adm = '';
+      $id_Adm = '';
     }
 
 
@@ -51,16 +51,16 @@
         <div class="card">
           <form method="post" action="process.php" enctype="multipart/form-data" class="needs-validation" novalidate>
             <div class="card-header">
-              <strong>INFORMAÇÕES DO USUÁRIO</strong>
-              <input type="text" name="idUser" id="idUser" placeholder="id" value="<?=$id_User?>">
-              <input type="text" name="nomeFoto" id="nomeFoto" placeholder="nome foto" value="<?=$imagem_User?>">
-              <input type="text" value="<?=$id_User?'ATUALIZAR':'SALVAR'?>" name="acao" >
+              <strong>INFORMAÇÕES DO ADMINISTRADOR</strong>
+              <input type="text" name="idAdm" id="idAdm" placeholder="id" value="<?=$id_Adm?>">
+              <input type="text" name="nomeFoto" id="nomeFoto" placeholder="nome foto" value="<?=$imagem_Adm?>">
+              <input type="text" value="<?=$id_Adm?'ATUALIZAR':'SALVAR'?>" name="acao" >
 
             </div>
             <div class="card-body row" style="align-items: center; justify-content: center;">
               <div class="col-md-2   text-center" >
                 <div class="bg-white rounded border" >
-                  <img id="preview" src="../../img/user/<?=$imagem_User!="" ? $imagem_User : 'padrao.png';?>" alt="..."
+                  <img id="preview" src="../../img/adm/<?=$imagem_Adm!="" ? $imagem_Adm : 'padrao.png';?>" alt="..."
                     class="rounded  w-100  "  style="height:200px; object-fit: cover; border:4px solid #ccc" >
                 </div>
               </div>
@@ -68,7 +68,7 @@
                 <div class="row">
                   <div class="col-md-3 mb-3">
                     <label for="nome" class="col-form-label">Nome:</label>
-                    <input type="text" class="form-control" name="nome" maxlength="50" id="nome" value="<?=$nome_User?>"
+                    <input type="text" class="form-control" name="nome" maxlength="50" id="nome" value="<?=$nome_Adm?>"
                       required>
                     <div class="invalid-feedback">
                       Nome Inválido
@@ -77,7 +77,7 @@
                   <div class="col-md-6 mb-3">
                     <label for="sobrenome" class="col-form-label">Sobrenome:</label>
                     <input type="text" class="form-control" name="sobrenome" maxlength="50" id="sobrenome"
-                      value="<?=$sobrenome_User?>" required>
+                      value="<?=$sobrenome_Adm?>" required>
                     <div class="invalid-feedback">
                       Sobrenome Inválido
                     </div>
@@ -85,7 +85,7 @@
                   <div class="col-md-3 mb-3">
                     <label for="cpf" class="col-form-label">CPF:</label>
                     <input type="text" class="form-control" name="cpf" maxlength="50" id="cpf"
-                      data-mask="000.000.000-00" data-mask-selectonfocus="true" value="<?=$cpf_User?>" required>
+                      data-mask="000.000.000-00" data-mask-selectonfocus="true" value="<?=$cpf_Adm?>" required>
                     <div class="invalid-feedback">
                       CPF Inválido
                     </div>
@@ -94,14 +94,14 @@
                 <div class="row">
                   <div class="col-md-3">
                     <label for="nasc" class="col-form-label">Data de Nascimento:</label>
-                    <input type="date" class="form-control" name="nasc" id="nasc" value="<?=$nasc_User?>" required>
+                    <input type="date" class="form-control" name="nasc" id="nasc" value="<?=$nasc_Adm?>" required>
                     <div class="invalid-feedback">
                       Data Inválido
                     </div>
                   </div>
                   <div class="col-md-6">
                     <label for="email" class="col-form-label">Email:</label>
-                    <input type="email" class="form-control" name="email" maxlength="100" value="<?=$email_User?>"
+                    <input type="email" class="form-control" name="email" maxlength="100" value="<?=$email_Adm?>"
                       id="email" required>
                     <div class="invalid-feedback">
                       E-mail Inválido
@@ -109,7 +109,7 @@
                   </div>
                   <div class="col-md-3">
                     <label for="senha" class="col-form-label">Senha:</label>
-                    <input type="password" class="form-control" name="senha" value="<?=$password_User?>" maxlength="10"
+                    <input type="password" class="form-control" name="senha" value="<?=$password_Adm?>" maxlength="10"
                       id="senha" required>
                     <div class="invalid-feedback">
                       Senha Inválido
