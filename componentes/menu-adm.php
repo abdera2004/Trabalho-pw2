@@ -22,7 +22,7 @@
     </li>
     <li class="fw-medium my-1">
       <a class="link-dark" href="../teladm" style="text-decoration: none;"><i class="fa fa-phone"></i>
-        Adm</a>
+        Telefone</a>
     </li>
   </ul>
 </div>
