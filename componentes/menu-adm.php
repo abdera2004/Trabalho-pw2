@@ -24,5 +24,9 @@
       <a class="link-dark" href="../teladm" style="text-decoration: none;"><i class="fa fa-phone"></i>
         Telefone</a>
     </li>
+    <li class="fw-medium my-1">
+      <a class="link-dark" href="../teladm" style="text-decoration: none;"><i class="fa fa-gamepad"></i>
+        Plataforma</a>
+    </li>
   </ul>
 </div>
