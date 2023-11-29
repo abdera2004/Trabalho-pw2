@@ -28,5 +28,9 @@
       <a class="link-dark" href="../plataforma" style="text-decoration: none;"><i class="fa fa-gamepad"></i>
         Plataforma</a>
     </li>
+    <li class="fw-medium my-1">
+      <a class="link-dark" href="../compra" style="text-decoration: none;"><i class="fa fa-shopping-cart"></i>
+        Compra</a>
+    </li>
   </ul>
 </div>

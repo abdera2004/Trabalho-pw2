@@ -35,31 +35,31 @@
       <?php 
       include('./../../componentes/menu-adm.php');
       ?>
-      <div class="col-md-10 p-4 borber">
+        <div class="col-md-10 p-4 border">
         <div class="card">
           <form method="post" action="process.php" enctype="multipart/form-data" class="needs-validation" novalidate>
             <div class="card-header">
-              <strong>INFORMAÇÕES DOS TELEFONES</strong>
-              <input type="text" name="codTelAdm" id="codTelAdm" placeholder="id" value="<?=$id_TelAdm?>">
-              <input type="text" value="<?=$id_TelAdm?'ATUALIZAR':'SALVAR'?>" name="acao" >
-
+              <strong>INFORMAÇÕES DO TELEFONE</strong>
+              <input type="text" name="codTelAdm" id="codTelAdm" placeholder="codTelAdm" value="<?=$id_TelAdm?>">
+              <input type="text" value="<?=$id_TelAdm?'ATUALIZAR':'SALVAR'?>" name="acao">
             </div>
             <div class="card-body row" style="align-items: center; justify-content: center;">
+              <div class="col-md-1 text-center">
               </div>
-              <div class=" col-md-10">
+              <div class="col-md-12">
                 <div class="row">
-                  <div class="col-md-3 mb-3 p-4">
-                    <label for="nome" class="col-form-label">Número:</label>
-                    <input type="text" class="form-control" name="num" maxlength="50" id="num" data-mask="(00)00000-0000" data-mask-selectonfocus="true" value="<?=$num_TelAdm?>"
-                      required>
+                  <div class="col-md-3 mb-3">
+                    <label for="num" class="col-form-label">Número:</label>
+                    <input type="text" class="form-control" name="num" maxlength="50" id="num" value="<?=$num_TelAdm?>" data-mask="(00)00000-0000" data-mask-selectonfocus="true" required>
                     <div class="invalid-feedback">
                       Número Inválido
                     </div>
                   </div>
-                <div class="row mt-5 ">
-                  <div class=" text-end  col-md-10">
-                  <a class=" btn btn-primary px-3" role="button" aria-disabled="true" href="index.php">Voltar</i></a>
-                  <input type="submit" class=" btn btn-success" value="Salvar">
+                </div>
+                  <div class="row mt-1">
+                  <div class="text-end col-md-1">
+                  <a class="btn btn-primary px-3 my-1" role="button" aria-disabled="true" href="index.php">Voltar</i></a>
+                  <input type="submit" class="px-3 btn btn-success" value="Salvar">
                 </div>
                 </div>
               </div>

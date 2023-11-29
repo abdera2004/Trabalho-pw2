@@ -43,15 +43,13 @@
               <tr>
                 <th class="col-md-1">ID</th>
                 <th class="col-md-1">Número</th>
-                <th class="col-md-3">ID adm</th>
                 <th class="text-center col-md-1">Alterar</th>
                 <th class="text-center col-md-1">Excluir</th>
               </tr>
               <?php foreach($teladms as $teladm) { ?>
               <tr>
                 <td><?=$teladm[0]?></td>
-                <td><?=$adm[1]?></td>
-                <td><?=$adm[2]?></td>
+                <td><?=$teladm[1]?></td>
                 <td class="text-center">
                   <form action="process.php" method="POST">
                     <input type="hidden" class="form-control" id="acao" name="acao" value="SELECTID">
