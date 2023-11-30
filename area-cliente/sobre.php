@@ -21,7 +21,7 @@
   <div class="container-fluid h-100 container00 container01">
     <div class="container">
       <?php 
-        include('./../componentes/header-cliente-logado.php');
+        include('./../componentes/header-cliente.php');
         ?>
     </div>
     <div class="container " style="height: 70vh; ">

@@ -26,7 +26,7 @@
     $user->setCpf($_POST['cpf']);
     $user->setNasc($_POST['nasc']);
     $user->setEmail($_POST['email']);
-    $user->setPassword($_POST['senha']);
+    $user->setPassword($_POST['password']);
     $user->setImagem($user->salvarImagem($_POST['nomeFoto'])); 
     $user->setToken($user->generateToken());
     try {
@@ -46,7 +46,7 @@
         $user->setCpf($_POST['cpf']);
         $user->setNasc($_POST['nasc']);
         $user->setEmail($_POST['email']);
-        $user->setPassword($_POST['senha']);
+        $user->setPassword($_POST['password']);
         $user->setImagem($user->salvarImagem($_POST['nomeFoto'])); 
         $user->setToken($user->generateToken());
         try {

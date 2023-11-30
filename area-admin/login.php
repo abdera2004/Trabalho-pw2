@@ -15,13 +15,13 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body style="justify-content: center; align-items: center; height: 100vh; background-color: #000000">
-  <div class="container col-xl-10 col-xxl-8 " style="height: 95vh; padding:8% 30px;">
+<body style="justify-content: center; align-items: center; height: 100vh;  ">
+  <div class="container col-xl-10 col-xxl-8 " style="height: 95vh; padding:8% 30px; background-color:'#ccc'">
     <div class="row align-items-center g-lg-5 py-4  ">
       <div class="col-lg-7 text-center text-lg-start">
-        <img src="./../img/site/logo-site-games.png" class="rounded mx-auto d-block" alt="..." style="width:40%">
-        <h1 class="display-4 fw-bold lh-1  mb-3 text-center text-white">Control Games</h1>
-        <p class="col-lg-10 fs-5 text-center w-100 display-4 fw-bold lh-1" style="color: white;">Painel Adminstrativo</p>
+        <img src="./../img/site/logo.png" class="rounded mx-auto d-block" alt="..." style="width:40%">
+        <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3 text-center">FilmeOn</h1>
+        <p class="col-lg-10 fs-5 text-center w-100 display-4 fw-bold lh-1">Painel Adminstrativo</p>
       </div>
       <div class="col-md-10 mx-auto col-lg-5">
         <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" method="post" action="home">

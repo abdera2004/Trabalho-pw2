@@ -1,6 +1,6 @@
 <?php
 
-    require_once '../../model/Conexao.php';
+require_once '../../model/Conexao.php';
 
     class JogoDao{
         public static function insert($jogo){
@@ -59,6 +59,13 @@
             $stmt->bindValue(7, $jogo->getData());
             $stmt->bindValue(8, $cod);
             return $stmt->execute();
+        }
+        public static function selectAllAsc(){
+            $conexao = Conexao::conectar();
+            $query = "SELECT * FROM tbjogo ORDER BY nomeJogo ASC";
+            $stmt = $conexao->prepare($query);
+            $stmt->execute();
+            return $stmt->fetchAll();
         }
         public static function checkCredentials($email, $senha){
             $conexao = Conexao::conectar();

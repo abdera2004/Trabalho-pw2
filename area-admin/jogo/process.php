@@ -57,7 +57,7 @@
   case 'SELECTID':
 
     try {
-        $jogoDao = JogoDao::selectById($_POST['cod']);
+        $jogoDao = JogoDao::selectById($_POST['codJogo']);
         // Configura as opções do contexto da solicitação
         include('register-jogo.php');
     } catch (Exception $e) {
