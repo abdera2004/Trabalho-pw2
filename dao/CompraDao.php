@@ -4,13 +4,14 @@
     class CompraDao{
         public static function insert($compra){
             $conexao = Conexao::conectar();
-            $query = "INSERT INTO tbcompra (qtdJogosCompra, valorTotalCompra, dataCompra, formaPagamento, statusCompra) VALUES (?,?,?,?,?)";
+            $query = "INSERT INTO tbcompra (qtdJogosCompra, valorTotalCompra, dataCompra, formaPagamento, statusCompra, nomeJogo) VALUES (?,?,?,?,?,?)";
             $stmt = $conexao->prepare($query);
             $stmt->bindValue(1, $compra->getQtd());
             $stmt->bindValue(2, $compra->getVal());
             $stmt->bindValue(3, $compra->getData());
             $stmt->bindValue(4, $compra->getPag());
             $stmt->bindValue(5, $compra->getStatus());
+            $stmt->bindValue(6, $compra->getNome());
             $stmt->execute();
         }
         public static function selectAll(){
@@ -37,24 +38,20 @@
         }
         public static function update($id, $compra){
             $conexao = Conexao::conectar();
-            $query = "UPDATE tbjogo SET 
-            nomeJogo = ?, 
-            generoJogo  = ?,
-            plataformaJogo = ?, 
-            precoJogo = ?, 
-            tamanhoJogo = ?,
-            imagemJogo = ?,
-            dataJogo = ?
-            WHERE codJogo = ?";
-            $stmt = $conexao->prepare($query);
-            $stmt->bindValue(1, $jogo->getNome());
-            $stmt->bindValue(2, $jogo->getGenero());
-            $stmt->bindValue(3, $jogo->getPlataforma());
-            $stmt->bindValue(4, $jogo->getPreco());
-            $stmt->bindValue(5, $jogo->getTamanho());
-            $stmt->bindValue(6, $jogo->getImagem());
-            $stmt->bindValue(7, $jogo->getData());
-            $stmt->bindValue(8, $cod);
+            $query = "UPDATE tbcompra SET 
+            qtdJogosCompra = ?, 
+            valorTotalCompra  = ?,
+            dataCompra = ?, 
+            formaPagamento = ?, 
+            statusCompra = ?,
+            nomeJogo = ?
+            WHERE codCompra = ?";
+            $stmt->bindValue(1, $compra->getQtd());
+            $stmt->bindValue(2, $compra->getVal());
+            $stmt->bindValue(3, $compra->getData());
+            $stmt->bindValue(4, $compra->getPag());
+            $stmt->bindValue(5, $compra->getStatus());
+            $stmt->bindValue(6, $compra->getNome());
             return $stmt->execute();
         }
     }

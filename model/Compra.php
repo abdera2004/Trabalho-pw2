@@ -2,7 +2,7 @@
 
 class Compra{
 
-    public $id, $qtd, $val, $data, $pag, $status;
+    public $id, $qtd, $val, $data, $pag, $status, $nome;
 
     public function getId(){
         return $this->id;
@@ -50,6 +50,14 @@ class Compra{
 
     public function setStatus($status){
         $this->status = $status;
+    }
+
+    public function getNome(){
+        return $this->nome;
+    }
+
+    public function setNome($nome){
+        $this->nome = $nome;
     }
 }
 
