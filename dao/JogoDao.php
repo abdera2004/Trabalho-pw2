@@ -1,6 +1,6 @@
 <?php
 
-    require_once '../../model/Conexao.php';
+require_once '../../model/Conexao.php';
 
     class JogoDao{
         public static function insert($jogo){

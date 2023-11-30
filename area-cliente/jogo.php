@@ -36,13 +36,13 @@
           <!-- Gallery item -->
           <div class="lista">
             <?php foreach($jogos as $jogo) { ?>
-              <div id="card" class="rounded">
-                <img src="../img/jogo/<?=$movie[6]="" ? $movie[6] : 'padrao.png';?>" alt="" class="img-fluid card-img-top" sttyle="width: 100%; height: 350px;  object-fit: cover;">
-                <td><?=$jogo[1]?></td>
-                <td><?=$jogo[2]?></td>
-                <td><?=$jogo[3]?></td>
-                <td><?=$jogo[4]?></td>
-                <td><?=$jogo[7]?></td>
+              <div id="card" class="rounded-4 border border-4 border-color-white">
+                <img src="../img/jogo/<?=$movie[6]="" ? $movie[6] : 'padrao.png';?>" alt="" class="img-fluid card-img-top">
+                <td><?=$jogo[1]?></td><br>
+                <td>Gênero: <?=$jogo[2]?></td><br>
+                <td>Plataformas: <?=$jogo[3]?></td><br>
+                <td>Preço: <?=$jogo[4]?></td><br>
+                <td>Data de lançamento: <?=$jogo[7]?></td>
                 <td class="text-center">
                   <form action="process.php" method="POST">
                     <input type="hidden" class="form-control" id="acao" name="acao" value="SELECTID">

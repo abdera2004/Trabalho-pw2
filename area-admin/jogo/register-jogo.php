@@ -1,16 +1,17 @@
-<?php 
+<?php
+
   require_once("../../componentes/modal.php");
   require_once '../../dao/JogoDao.php';
 
   if(!empty($_POST)){
-    $cod_Jogo = $JogoDao['codJogo'];
-    $nome_Jogo =  $JogoDao['nomeJogo'];
-    $genero_Jogo = $JogoDao['generoJogo'];
-    $plataforma_Jogo = $JogoDao['plataformaJogo'];
-    $preco_Jogo= $JogoDao['precoJogo'];
-    $tamanho_Jogo = $JogoDao['tamanhoJogo'];
-    $imagem_Jogo = $JogoDao['imagemJogo'];
-    $data_Jogo = $JogoDao['dataJogo'];
+    $cod_Jogo = $jogoDao['codJogo'];
+    $nome_Jogo =  $jogoDao['nomeJogo'];
+    $genero_Jogo = $jogoDao['generoJogo'];
+    $plataforma_Jogo = $jogoDao['plataformaJogo'];
+    $preco_Jogo= $jogoDao['precoJogo'];
+    $tamanho_Jogo = $jogoDao['tamanhoJogo'];
+    $imagem_Jogo = $jogoDao['imagemJogo'];
+    $data_Jogo = $jogoDao['dataJogo'];
     }else{
       $nome_Jogo = '';
       $genero_Jogo = '';
