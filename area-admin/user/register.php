@@ -108,8 +108,8 @@
                     </div>
                   </div>
                   <div class="col-md-3">
-                    <label for="senha" class="col-form-label">Senha:</label>
-                    <input type="password" class="form-control" name="senha" value="<?=$password_User?>" maxlength="10"
+                    <label for="password" class="col-form-label">Senha:</label>
+                    <input type="password" class="form-control" name="password" value="<?=$password_User?>" maxlength="10"
                       id="senha" required>
                     <div class="invalid-feedback">
                       Senha Inválido

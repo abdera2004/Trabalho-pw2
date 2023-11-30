@@ -1,3 +1,9 @@
+<?php 
+  session_start();
+  require_once("../componentes/modal.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -19,8 +25,8 @@
   <div class="container col-xl-10 col-xxl-8 " style="height: 95vh; padding:8% 30px; background-color:'#ccc'">
     <div class="row align-items-center g-lg-5 py-4  ">
       <div class="col-lg-7 text-center text-lg-start">
-        <img src="./../img/site/logo.png" class="rounded mx-auto d-block" alt="..." style="width:40%">
-        <h1 class="display-4 fw-bold lh-1  mb-3 text-center text-white">FilmeOn</h1>
+        <img src="./../img/site/logo-site-games.png" class="rounded mx-auto d-block" alt="..." style="width:40%">
+        <h1 class="display-4 fw-bold lh-1  mb-3 text-center text-white">Control Games</h1>
       </div>
       <div class="col-md-10 mx-auto col-lg-5">
         <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" method="post" action="home.php">

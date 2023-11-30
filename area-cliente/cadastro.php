@@ -25,7 +25,7 @@
             <label for="floatingInput">Email</label>
           </div>
           <div class="form-floating ">
-            <input type="password" name="senha" class="form-control" id="floatingPassword" placeholder="Password">
+            <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
             <label for="floatingPassword">Password</label>
           </div>
           <div class="checkbox mt-3 mb-2">
