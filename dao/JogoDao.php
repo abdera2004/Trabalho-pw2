@@ -60,6 +60,13 @@
             $stmt->bindValue(8, $cod);
             return $stmt->execute();
         }
+        public static function selectAllAsc(){
+            $conexao = Conexao::conectar();
+            $query = "SELECT * FROM tbjogo ORDER BY nomeJogo ASC";
+            $stmt = $conexao->prepare($query);
+            $stmt->execute();
+            return $stmt->fetchAll();
+        }
         public static function checkCredentials($email, $senha){
             $conexao = Conexao::conectar();
             $query = "SELECT * FROM tbAdm WHERE codAdm = ?";

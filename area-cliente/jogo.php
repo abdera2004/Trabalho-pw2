@@ -1,3 +1,9 @@
+<?php 
+  require_once '../dao/jogoDao.php'; 
+  $jogos = JogoDao::selectAllAsc();
+  //var_dump($movies);
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -28,16 +34,31 @@
       <div class="px-lg-5">
         <div class="row py-5 justify-content-evenly ">
           <!-- Gallery item -->
-          <div class="col-xxl-3 col-lg-3 col-md-6 mb-4 mt-3" style="width: 300px;">
-            <div class="bg-white rounded shadow card">
-              <img src="../img//site/nfsunbound.jpg" alt="" class="img-fluid card-img-top">
-              <div class="p-4">
-                <h5 class="card-title">Need for Speed Unbound</h5>
-                <p class="small text-muted mb-2" style="text-align:justify">Need for Speed Unbound é um jogo eletrônico de simulação de direção de mundo aberto ambientado na cidade fictícia Lakeshore, inspirada em Chicago.</p>
-                <p class="small text-muted mb-1"><span class="fw-bold">Categoria: </Span>Corrida</p>
-                <p class="small text-muted mb-1"><span class="fw-bold">Plataformas: </Span>Windows, Playstation 5, Xbox Series</p>
-              </div>
-            </div>
+          <div class="lista">
+            <?php foreach($jogos as $jogo) { ?>
+              <div id="card" class="rounded">
+                <img src="../img/jogo/<?=$movie[6]="" ? $movie[6] : 'padrao.png';?>" alt="" class="img-fluid card-img-top" sttyle="width: 100%; height: 350px;  object-fit: cover;">
+                <td><?=$jogo[1]?></td>
+                <td><?=$jogo[2]?></td>
+                <td><?=$jogo[3]?></td>
+                <td><?=$jogo[4]?></td>
+                <td><?=$jogo[7]?></td>
+                <td class="text-center">
+                  <form action="process.php" method="POST">
+                    <input type="hidden" class="form-control" id="acao" name="acao" value="SELECTID">
+                    <input type="hidden" class="form-control" id="id" name="id" value="<?=$jogo[0]?>">
+                    <button type="submit" class="dropdown-item" ><i
+                        class="fas fa-edit fa-lg text-secondary"></i>
+                    </button>
+                  </form>
+                </td>
+                <td class="text-center ">
+                  <a class="dropdown-item" onclick="modalRemover(<?=$jogo[0]?>,'idDeletar')">
+                    <i class="fas fa-trash-alt fa-lg text-danger" style="cursor: pointer;"></i>
+                  </a>
+                </td>
+              <div>
+                <?php } ?>
           </div>
         </div>
       </div>

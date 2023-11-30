@@ -128,10 +128,15 @@ li a:hover:before {
     font-size: 50px;
   }
 
-
   .mediumTitle {
     width: auto;
     font-size: 50px;
+  }
+
+  #card{
+    height: 276px;
+    width: 163px;
+    background-color: #d9d9d9;
   }
 } ;
 
