@@ -62,12 +62,12 @@
             $stmt->bindValue(9, $id); // Certifique-se de que o ID seja o terceiro valor
             return $stmt->execute();
         }
-        public static function checkCredentials($email, $senha){
+        public static function checkCredentials($email, $password){
             $conexao = Conexao::conectar();
             $query = "SELECT * FROM tbuser WHERE emailUser = ? and passwordUser = ?";
             $stmt = $conexao->prepare($query);
             $stmt->bindValue(1, $email);
-            $stmt->bindValue(2, $senha);
+            $stmt->bindValue(2, $password);
             $stmt->execute();
             return $stmt->fetch(PDO::FETCH_ASSOC);
         }

@@ -17,10 +17,11 @@
 
 <body style="justify-content: center; align-items: center; height: 100vh;  " class="bg-dark">
   <div class="container col-xl-10 col-xxl-8 " style="height: 95vh; padding:8% 30px; background-color:'#ccc'">
-    <div class="row align-items-center g-lg-5 py-4  ">
+    <div class="row align-items-center g-lg-5 py-4">
       <div class="col-lg-7 text-center text-lg-start">
-        <img src="./../img/site/logo.png" class="rounded mx-auto d-block" alt="..." style="width:40%">
-        <h1 class="display-4 fw-bold lh-1  mb-3 text-center text-white">FilmeOn</h1>
+        <img src="./../img/site/logo-site-games.png" class="rounded mx-auto d-block" alt="..." style="width:40%">
+        <h1 class="display-4 fw-bold lh-1  mb-3 text-center text-white">Control Games</h1>
+        <p class="col-lg-10 fs-5 text-center w-100 display-4 fw-bold lh-1" style="color: white;">Bem-vindo(a) de volta!</p>
       </div>
       <div class="col-md-10 mx-auto col-lg-5">
         <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" method="post" action="home.php">
@@ -29,7 +30,7 @@
             <label for="floatingInput">Email</label>
           </div>
           <div class="form-floating ">
-            <input type="password" name="senha" class="form-control" id="floatingPassword" placeholder="Password">
+            <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
             <label for="floatingPassword">Password</label>
           </div>
           <div class="checkbox mt-3 mb-2">
@@ -47,6 +48,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
   </script>
-</body>
 
+</body>
 </html>
