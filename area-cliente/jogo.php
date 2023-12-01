@@ -1,5 +1,5 @@
 <?php 
-  require_once "../model/Conexao.php";
+  require_once "../dao/JogoDao.php";
   
   $jogos = JogoDao::selectAllAsc();
   //var_dump($movies);
