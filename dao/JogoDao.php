@@ -1,6 +1,6 @@
 <?php
 
-require_once '../model/Conexao.php';
+require_once 'C:\xampp\htdocs\oi\Trabalho-pw2\model\Conexao.php';
 
     class JogoDao{
         public static function insert($jogo){
@@ -50,7 +50,7 @@ require_once '../model/Conexao.php';
             dataJogo = ?
             WHERE codJogo = ?";
             $stmt = $conexao->prepare($query);
-            $stmt->bindValue(1, $jogo->getNome());
+            $stmt->bindValue(1, $jogo->getnomeJogo());
             $stmt->bindValue(2, $jogo->getGenero());
             $stmt->bindValue(3, $jogo->getPlataforma());
             $stmt->bindValue(4, $jogo->getPreco());

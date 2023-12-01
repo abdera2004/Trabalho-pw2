@@ -6,8 +6,6 @@
  $jogo = new Jogo();
  $msg = new Mensagem();
 
-
-
  switch ($_POST["acao"]) {
   case 'DELETE':
    try {
@@ -45,7 +43,7 @@
         $jogo->setImagem($jogo->salvarImagem($_POST['nomeFoto']));
         $jogo->setData($_POST['data']);
         try {
-          $jogoDao = JogoDao::update($_POST["codJogo"], $jogo);
+          $jogoDao = JogoDao::update($_POST["codjogo"], $jogo);
           $msg->setMensagem("Jogo Atualizado com sucesso.", "bg-success");
           header("Location: index.php");
         } catch (Exception $e) {
@@ -57,7 +55,7 @@
   case 'SELECTID':
 
     try {
-        $jogoDao = JogoDao::selectById($_POST['codJogo']);
+        $jogoDao = JogoDao::selectById($_POST['id']);
         // Configura as opções do contexto da solicitação
         include('register-jogo.php');
     } catch (Exception $e) {
