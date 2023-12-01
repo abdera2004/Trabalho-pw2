@@ -2,7 +2,7 @@
   require_once "../dao/JogoDao.php";
   
   $jogos = JogoDao::selectAllAsc();
-  //var_dump($movies);
+  //var_dump($jogos);
 ?>
 
 <!DOCTYPE html>
@@ -35,32 +35,24 @@
       <div class="px-lg-5">
         <div class="row py-5 justify-content-evenly ">
           <!-- Gallery item -->
-          <div class="lista">
-            <?php foreach($jogos as $jogo) { ?>
-              <div id="card" class="rounded-4 border border-4 border-color-white">
-                <img src="../img/jogo/<?=$jogo[6]=".jpg" ? $jogo[6] : 'padrao.png';?>" alt="" class="img-fluid card-img-top">
-                <td><?=$jogo[1]?></td><br>
-                <td>Gênero: <?=$jogo[2]?></td><br>
-                <td>Plataformas: <?=$jogo[3]?></td><br>
-                <td>Preço: <?=$jogo[4]?></td><br>
-                <td>Data de lançamento: <?=$jogo[7]?></td>
-                <td class="text-center">
-                  <form action="process.php" method="POST">
-                    <input type="hidden" class="form-control" id="acao" name="acao" value="SELECTID">
-                    <input type="hidden" class="form-control" id="id" name="id" value="<?=$jogo[0]?>">
-                    <button type="submit" class="dropdown-item" ><i
-                        class="fas fa-edit fa-lg text-secondary"></i>
-                    </button>
-                  </form>
-                </td>
-                <td class="text-center ">
-                  <a class="dropdown-item" onclick="modalRemover(<?=$jogo[0]?>,'idDeletar')">
-                    <i class="fas fa-trash-alt fa-lg text-danger" style="cursor: pointer;"></i>
-                  </a>
-                </td>
-              <div>
-                <?php } ?>
+          <?php foreach($jogos as $jogo) { ?>
+            <div class="col-xxl-3 col-lg-3 col-md-6 mb-4 mt-3" style="width: 300px">
+            <div class="bg-white rounded-4 shadow card " style="height: 100% ">
+              <img src="../img/jogo/<?=$jogo[6]!=".jpg" ? $jogo[6] : 'padrao.png';?>" alt="" class="img-fluid card-img-top rounded-top-4" style="width: 100%; height: 100%;  object-fit: cover;">
+              <div class=" text-center justify-content-center d-flex">
+                <h6 class="card-title py-3 "><?=$jogo[1]?></h6>
+              </div>
+              <div class="justify-content-left px-3">
+                <h6 class="">Gênero: <?=$jogo[2]?></h6><br>
+                <h6 class="">Plataformas: <?=$jogo[3]?></h6><br>
+                <h6 class="">Tamanho: <?=$jogo[5]?></h6><br>
+              </div>
+              <div class=" text-center justify-content-center d-flex">
+                <h6 class="card-title py-3" style="color: #2BC016; font-weight: bold; font-size: large;"><?=$jogo[4]?></h6>
+              </div>
+            </div>
           </div>
+          <?php } ?>
         </div>
       </div>
     </div>
