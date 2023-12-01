@@ -38,7 +38,7 @@
           <div class="lista">
             <?php foreach($jogos as $jogo) { ?>
               <div id="card" class="rounded-4 border border-4 border-color-white">
-                <img src="../img/jogo/<?=$movie[6]="" ? $movie[6] : 'padrao.png';?>" alt="" class="img-fluid card-img-top">
+                <img src="../img/jogo/<?=$jogo[6]=".jpg" ? $jogo[6] : 'padrao.png';?>" alt="" class="img-fluid card-img-top">
                 <td><?=$jogo[1]?></td><br>
                 <td>Gênero: <?=$jogo[2]?></td><br>
                 <td>Plataformas: <?=$jogo[3]?></td><br>
