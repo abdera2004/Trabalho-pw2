@@ -17,12 +17,12 @@
 </head>
 
 <body style="justify-content: center; align-items: center; height: 100vh ">
-
-  <div class="container-fluid container00" style="background-image: url(../img/site/fundo-neon.jpg);">
-    <div class="container">
       <?php 
         include('./../componentes/header-cliente.php');
       ?>
+  <div class="container-fluid container00" style="background-image: url(../img/site/fundo-neon.jpg);">
+    <div class="container">
+
     </div>
     <div class="container titlePadding" data-aos="fade-up" data-aos-duration="1500">
       <p class="h5" id="lauchComing">O melhor lugar para os gamers</p>

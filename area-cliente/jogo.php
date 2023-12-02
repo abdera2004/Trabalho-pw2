@@ -25,12 +25,14 @@
 
 <body style="justify-content: center; align-items: center; height: 100vh; background-image: url(../img/site/fundo-neon2.jpg);">
 
+  <?php
+  
+  include('./../componentes/header-cliente.php');
+  
+  ?>
+  
   <div class="container-fluid container00">
     <div class="container">
-      <?php 
-        include('./../componentes/header-cliente.php');
-      ?>
-    </div>
     <div class="container" style="height: 70vh; ">
       <div class="px-lg-5">
         <div class="row py-5 justify-content-evenly ">
