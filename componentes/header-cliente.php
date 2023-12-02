@@ -19,7 +19,11 @@
           <div style="background-color: #2BC016; border-radius: 50px;" class="">
             <li><button href="login.php" class="nav-link text-nav" style="color: white;">SIGN-UP</button></li>
           </div>
-          <li><a href="sobre.php" class="nav-link px-3 text-nav text-white">PESQUISAR</a></li>
+          <div class="">
+            <form class="d-flex" role="search" >
+            <input class="form-control me-2 rounded" type="search" placeholder="Pesquisar..." aria-label="Search">
+            </form>
+            </div>
         </ul>
     </div>
 </nav>
