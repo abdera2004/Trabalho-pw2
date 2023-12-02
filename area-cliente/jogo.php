@@ -40,7 +40,7 @@
           <?php foreach($jogos as $jogo) { ?>
             <div class="col-xxl-3 col-lg-3 col-md-6 mb-4 mt-3" style="width: 270px; height: 335px;">
             <div class="bg-white rounded-4 shadow card " style="height: 100% ">
-              <img src="../img/jogo/<?=$jogo[6]!=".jpg" ? $jogo[6] : 'padrao.png';?>" alt="" class="img-fluid card-img-top" style="width: 100%; height: 50%;  object-fit: contain;">
+              <img src="../img/jogo/<?=$jogo[6]!=".jpg" ? $jogo[6] : 'padrao.png';?>" alt="" class="img-fluid card-img-top rounded-top-4" style="width: 100%; height: 50%;  object-fit: cover;">
               <div style="height: 50%">  
                 <div class=" text-center justify-content-center d-flex">
                   <h6 class="card-title"><?=$jogo[1]?></h6>
@@ -62,9 +62,6 @@
     </div>
   </div>
 
-<?php 
-  include('./../componentes/footer-cliente.php');
-?>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
   </script>

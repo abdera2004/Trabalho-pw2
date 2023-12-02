@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg d-flex flex-column" style="background-color: #353535;">
   <div class="container-fluid d-flex">
-    <a href="home.php" class="d-flex link-body-emphasis text-decoration-none">
-      <img src="./../img/site/logo-site-games.png" width="70" height="70" class="d-inline-block align-top" alt="">
+    <a href="home.php" class="d-flex link-body-emphasis text-decoration-none start-0">
+      <img src="./../img/site/logo-nova.png" width="100" height="100" class="" alt="">
     </a>
     <img src="./../img/site/codmw3.jpeg" width="500" height="70" class="d-inline-block align-top imagem" alt="">
     <img src="./../img/site/re4.jpg" width="500" height="70" class="d-inline-block align-top imagem" alt="">
