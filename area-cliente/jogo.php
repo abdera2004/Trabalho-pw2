@@ -40,12 +40,12 @@
           <?php foreach($jogos as $jogo) { ?>
             <div class="col-xxl-3 col-lg-3 col-md-6 mb-4 mt-3" style="width: 270px; height: 335px;">
             <div class="bg-white rounded-4 shadow card " style="height: 100% ">
-              <img src="../img/jogo/<?=$jogo[6]!=".jpg" ? $jogo[6] : 'padrao.png';?>" alt="" class="img-fluid card-img-top rounded-top-4" style="width: 100%; height: 50%;  object-fit: fit;">
+              <img src="../img/jogo/<?=$jogo[6]!=".jpg" ? $jogo[6] : 'padrao.png';?>" alt="" class="img-fluid card-img-top" style="width: 100%; height: 50%;  object-fit: contain;">
               <div style="height: 50%">  
                 <div class=" text-center justify-content-center d-flex">
                   <h6 class="card-title"><?=$jogo[1]?></h6>
                 </div>
-                <div class="justify-content-left px-1">
+                <div class="justify-content-left px-2">
                   <h7 class="" style="font-size: small; font-weight: bold;">Gênero: <?=$jogo[2]?></h6><br>
                   <h7 class="" style="font-size: small; font-weight: bold;">Plataformas: <?=$jogo[3]?></h6><br>
                   <h7 class="" style="font-size: small; font-weight: bold;">Tamanho: <?=$jogo[5]?></h6><br>
