@@ -36,7 +36,7 @@
         <div class="row py-5 justify-content-evenly ">
           <!-- Gallery item -->
           <?php foreach($jogos as $jogo) { ?>
-            <div class="col-xxl-3 col-lg-3 col-md-6 mb-4 mt-3" style="width: 200px; height: 335px;">
+            <div class="col-xxl-3 col-lg-3 col-md-6 mb-4 mt-3" style="width: 270px; height: 335px;">
             <div class="bg-white rounded-4 shadow card " style="height: 100% ">
               <img src="../img/jogo/<?=$jogo[6]!=".jpg" ? $jogo[6] : 'padrao.png';?>" alt="" class="img-fluid card-img-top rounded-top-4" style="width: 100%; height: 50%;  object-fit: fit;">
               <div style="height: 50%">  
