@@ -25,14 +25,11 @@
 
 <body style="justify-content: center; align-items: center; height: 100vh; background-image: url(../img/site/fundo-neon2.jpg);">
 
-  <?php
-  
+<?php
   include('./../componentes/header-cliente.php');
-  
-  ?>
+?>
   
   <div class="container-fluid container00">
-    <div class="container">
     <div class="container" style="height: 70vh; ">
       <div class="px-lg-5">
         <div class="row py-5 justify-content-evenly ">
@@ -50,7 +47,7 @@
                   <h7 class="" style="font-size: small; font-weight: bold;">Plataformas: <?=$jogo[3]?></h6><br>
                   <h7 class="" style="font-size: small; font-weight: bold;">Tamanho: <?=$jogo[5]?></h6><br>
                 </div>
-                <div class=" text-center justify-content-center d-flex">
+                <div class="text-center justify-content-center d-flex">
                   <h6 class="card-title py-4" style="color: #2BC016; font-weight: bold; font-size: large;"><?=$jogo[4]?></h6>
                 </div>
               </div>
@@ -59,9 +56,11 @@
           <?php } ?>
         </div>
       </div>
-    </div>
   </div>
 
+<?php
+  include('./../componentes/footer-cliente.php');
+?>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
   </script>

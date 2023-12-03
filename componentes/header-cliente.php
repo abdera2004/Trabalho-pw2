@@ -13,11 +13,11 @@
           <li><a href="jogo.php" class="nav-link px-3 text-nav text-white">JOGOS</a></li>
           <li><a href="sobre.php" class="nav-link px-3 text-nav text-white">SOBRE</a></li>
           <div style="margin-left: 10px; margin-right: 10px;"></div>
-          <div style="background-color: white; border-radius: 50px;" class="">
-            <li><button href="login.php" class="nav-link text-nav" style="color: #2BC016;">LOGIN</button></li>
+          <div style="background-color: white; border-radius: 50px; padding-top: 7px" class="">
+            <li><a type="button" href="login.php" class="text-nav" style="justify-content: center; align-items: center">LOGIN</a></li>
           </div>
-          <div style="background-color: #2BC016; border-radius: 50px;" class="">
-            <li><button href="login.php" class="nav-link text-nav" style="color: white;">SIGN-UP</button></li>
+          <div style="background-color: white; border-radius: 50px; padding-top: 7px" class="">
+            <li><a type="button" href="./../area-cliente/login.php" class="text-nav">SIGN-UP</a></li>
           </div>
           <div class="">
             <form class="d-flex" role="search" >
@@ -38,7 +38,9 @@ margin-bottom: 10px;
 }
 
 .text-nav{
-
+  color: #2BC016; 
+  padding-left: 10px; 
+  padding-right: 10px;
   font-weight: bold;
 }
 
