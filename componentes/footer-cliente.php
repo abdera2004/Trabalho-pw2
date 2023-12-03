@@ -1,33 +1,54 @@
-<footer class="container-fluid footer w-100">
-  <a href="#" target="blank" class="me-4">© 2023 Control Games. Todos os direitos reservados.</a>
-  <a href="../area-admin/login.php" target="blank" class="me-4">Admin</a>
-  <img class="icone" src="../img/site/instagram.png">
-  <img class="icone" src="../img/site/youtube.png">
-  <img class="icone" src="../img/site/twitter.png">
+<footer class="container-fluid footer">
+  <div class="d-flex flex-row w-100" style="justify-content: space-between;">
+    <div class="d-flex flex-column">
+      <h4 class="">REDES SOCIAIS</h4>
+      <a class="navbar-brand fs-5" style="color: #2BC016;" href="https://instagram.com/ruan_sant0s7?igshid=OGQ5ZDc2ODk2ZA==">
+      <img src="../img/site/icons8-instagram-100 (1).png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+      ruan_sant0s7
+      </a>
+      <a class="navbar-brand fs-5" style="color: #2BC016;" href="https://instagram.com/ruan_sant0s7?igshid=OGQ5ZDc2ODk2ZA==">
+      <img src="../img/site/icons8-twitter-100 (1).png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+      ruan_sant0s7
+      </a>
+      <a class="navbar-brand fs-5" style="color: #2BC016;" href="https://youtube.com/@abdera2004?si=Rk4VzZGRXzpTzNYw">
+      <img src="../img/site/icons8-youtube-100 (1).png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+      Ruan Santos
+      </a>
+    </div>
+    <div class="d-flex flex-column">
+      <h4>ÁREA DO CLIENTE</h4>
+      <h5>MINHAS COMPRAS</h5>
+      <h5>RASTREIO DE PEDIDOS</h5>
+    </div>
+    <div class="d-flex flex-column">
+      <h4>DÚVIDAS</h4>
+      <h5>PERGUNTAS FREQUENTES</h5>
+      <h5>COMO COMPRAR</h5>
+    </div>
+    <div class="d-flex flex-column">
+      <h4>CONTATO</h4>
+      <a class="navbar-brand fs-5" style="color: #2BC016;" href="#">
+      <img src="../img/site/icons8-telephone-100.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+      (11) 99665-4946
+      </a>
+      <a class="navbar-brand fs-5" style="color: #2BC016;" href="#">
+      <img src="../img/site/icons8-at-96.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+      ruan.pereira23@etec.sp.gov.br
+      </a>
+      <a class="navbar-brand fs-5" style="color: #2BC016;" href="#">
+      <img src="../img/site/icons8-location-100.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+      ETEC DE GUAIANAZES
+      </a>
+    </div>
+  </div>
 </footer>
 
 <style>
-.footer{
-  background-color: #000000;
-  height: 30vh;
-  font-size: 12px;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer a{
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-
-.footer a:hover {
-  color: #b9b9b9;
-}
-
-.icone{
-  height: 7vh;
-  margin: 10px;
-}
+  .footer{
+    background-color: #353535;
+    height: 40vh;
+  }
+  h5{
+    color: #2BC016;
+  }
 </style>
