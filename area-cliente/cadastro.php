@@ -1,20 +1,18 @@
-<?php     
+<?php
+
+  require_once 'C:\xampp\htdocs\oi\Trabalho-pw2\model\Conexao.php';     
   session_start();
   require_once("../componentes/modal.php");
 
-
   //require_once '../dao/ClientDao.php';
   if(!empty($_POST)){
-    $id_Client= $userDao['idUser'];
-    $imagem_Client = $userDao['imagemUser'];
+    $id_User= $userDao['idUser'];
+    $imagem_User = $userDao['imagemUser'];
     }else{
-      $id_Client= '';
-      $imagem_Client = '';
+      $id_User= '';
+      $imagem_User = '';
     }
-
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -34,61 +32,68 @@
 <body style="justify-content: center; align-items: center; background-image: url(../img/site/cadastro.jpg);" class="container00">
   <div class="container-fluid container00">
     <div class="container">
-    <div class="p-1 border rounded-4" style="background-color: #CBEFB6;">
+    <div class="p-3 border rounded-4" style="background-color: #CBEFB6;">
       <div class="text-center">
         <h1 class="">CADASTRO</h1>
         <hr class="opacity-100" style="width: 100%">
       </div>      
-      <form method="post" action="cadastroProcess.php" enctype="multipart/form-data" class="needs-validation" novalidate>
+      <form method="post" action="cadastroprocesso.php" enctype="multipart/form-data" class="needs-validation" novalidate>
               <input type="hidden" name="idUser" id="idUser" placeholder="id" value="<?=$id_User?>">
               <input type="hidden" name="nomeFoto" id="nomeFoto" placeholder="nome foto" value="<?=$imagem_User?>">
               <input type="hidden" value="<?=$id_User?'ATUALIZAR':'SALVAR'?>" name="acao" >
           <div class="row">
-            <div class="col-md-3  ">
-              <div class="bg-white rounded text-center">
-                  <img id="preview" src="../img/user/padrao.png" alt="..."
-                    class="rounded  w-100 mb-3 "  style="height:250px; object-fit: cover; " >
-                    <label for="foto" class="btn btn-light mb-2"> Carregar Imagem</label>
-                    <input type="file" id="foto" name="foto" accept="image/*" class="custom-file-input" style="display: none">
-              </div>
-            </div>
-            <div class="col-md-9 ">
-
+            <div class="col-md-9">
                 <div class="col-md-6">
-                    <label for="nome" class="col-form-label ">Nome:</label>
-                    <input type="text" class="form-control   " name="nome" maxlength="50" id="nome" required>
+                    <label for="nome" class="col-form-label">Nome:</label>
+                    <input type="text" class="form-control" name="nome" maxlength="50" id="nome" required>
                 </div>
+
                 <div class="col-md-6">
                     <label for="sobrenome" class="col-form-label ">Sobrenome:</label>
-                    <input type="text" class="form-control   " name="sobrenome" maxlength="50" id="sobrenome" required>
+                    <input type="text" class="form-control" name="sobrenome" maxlength="50" id="sobrenome" required>
                 </div>
+
                 <div class="col-md-6">
                 <label for="cpf" class="col-form-label ">CPF:</label>
-                    <input type="text" data-mask="000.000.000-00" data-mask-selectonfocus="true" class="form-control  " name="cpf" maxlength="50" id="cpf" required>
+                    <input type="text" data-mask="000.000.000-00" data-mask-selectonfocus="true" class="form-control" name="cpf" maxlength="50" id="cpf" required>
                 </div>
 
               <div class="row">
+
                 <div class="col-md-6">
-                    <label for="nasc" class="col-form-label ">Data de Nascimento:</label>
-                    <input type="date"  class="form-control  " name="nasc" maxlength="50" id="nasc" required>
+                    <label for="nasc" class="col-form-label">Data de Nascimento:</label>
+                    <input type="date"  class="form-control" name="nasc" maxlength="50" id="nasc" required>
                 </div>
+
               </div>
               <div class="row">
+
                 <div class="col-md-6">
-                    <label for="email" class="col-form-label ">Email :</label>
+                    <label for="email" class="col-form-label">Email:</label>
                     <input type="email" class="form-control" name="email" maxlength="50" id="email" required>
                 </div>
+
               </div>
 
                 <div class="col-md-6">
-                    <label for="password" class="col-form-label ">Senha :</label>
-                    <input type="password" class="form-control  " name="password" maxlength="50" id="password" required>
-                </div>
-                <div class="col-md-6 ">
-                <label for="passwordconf" class="col-form-label ">Confirmar Senha:</label>
-                    <input type="password" class="form-control  " name="passwordconf" maxlength="50" id="passwordconf" required>
+                    <label for="password" class="col-form-label">Senha:</label>
+                    <input type="password" class="form-control" name="password" maxlength="50" id="password" required>
                 </div>
 
+                <div class="col-md-6">
+                <label for="passwordconf" class="col-form-label">Confirmar Senha:</label>
+                    <input type="password" class="form-control" name="passwordconf" maxlength="50" id="passwordconf" required>
+                </div><br>
+
+                <div class="col-md-3">
+                  <p>Foto de perfil</p>
+                  <div class="bg-white rounded text-center">
+                    <label for="foto" class="btn btn-light mb-2">Carregar Imagem</label>
+                    <img id="preview" src="../img/user/padrao.png" alt="..."
+                    class="rounded w-100 mb-3 "  style="height: 150px; object-fit: cover;">
+                    <input type="file" id="foto" name="nomeFoto" accept="image/*" class="custom-file-input" style="display: none">
+                </div>
+              </div>
             </div>
           </div>
           <div class="row">

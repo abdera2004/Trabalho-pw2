@@ -18,15 +18,12 @@ switch ($_POST["acao"]) {
     $user->setNome($_POST['nome']);
     $user->setCpf($_POST['cpf']);
     $user->setNasc($_POST['nasc']);
-    $user->setCelular($_POST['cel']);
     $user->setEmail($_POST['email']);
     $user->setPassword($_POST['password']);
-    $user->setCep($_POST['cep']);
-    $user->setEndereco($_POST['endereco']);
     $user->setImagem($user->salvarImagem($_POST['nomeFoto'])); 
     $user->setToken($user->generateToken());
     try {
-      $userDao = ClientDao::insert($user);
+      $userDao = UserDao::insert($user);
       $msg->setMensagem("Usuário Salvo com sucesso.", "bg-success");
       header("Location: login.php");
     } catch (Exception $e) {

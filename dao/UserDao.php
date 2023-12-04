@@ -1,5 +1,5 @@
 <?php
-    require_once '../../model/Conexao.php';
+    require_once 'C:\xampp\htdocs\oi\Trabalho-pw2\model\Conexao.php';
     
     class UserDao{
         public static function insert($user){
@@ -8,7 +8,7 @@
             $stmt = $conexao->prepare($query);
             $stmt->bindValue(1, $user->getNome());
             $stmt->bindValue(2, $user->getSobrenome());
-            $stmt->bindValue(3, $user->getCPF());
+            $stmt->bindValue(3, $user->getCpf());
             $stmt->bindValue(4, $user->getNasc());
             $stmt->bindValue(5, $user->getEmail());
             $stmt->bindValue(6, $user->getPassword());
@@ -38,7 +38,7 @@
             $stmt->bindValue(1, $id);
             return  $stmt->execute();
         }
-        public static function update($id, $user ){
+        public static function update($id, $user){
             $conexao = Conexao::conectar();
             $query = "UPDATE tbuser SET 
             nomeUser = ?, 
@@ -53,13 +53,14 @@
             $stmt = $conexao->prepare($query);
             $stmt->bindValue(1, $user->getNome());
             $stmt->bindValue(2, $user->getSobrenome());
-            $stmt->bindValue(3, $user->getCPF());
+            $stmt->bindValue(3, $id); 
             $stmt->bindValue(4, $user->getNasc());
             $stmt->bindValue(5, $user->getEmail());
             $stmt->bindValue(6, $user->getPassword());
             $stmt->bindValue(7, $user->getImagem());
             $stmt->bindValue(8, $user->getToken());
-            $stmt->bindValue(9, $id); // Certifique-se de que o ID seja o terceiro valor
+            $stmt->bindValue(9, $user->getCPF());
+            // Certifique-se de que o ID seja o terceiro valor
             return $stmt->execute();
         }
         public static function checkCredentials($email, $password){
