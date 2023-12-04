@@ -17,7 +17,7 @@
             <li><a type="button" href="login.php" class="text-nav" style="justify-content: center; align-items: center">LOGIN</a></li>
           </div>
           <div style="background-color: white; border-radius: 50px; padding-top: 7px" class="">
-            <li><a type="button" href="./../area-cliente/login.php" class="text-nav">SIGN-UP</a></li>
+            <li><a type="button" href="./../area-cliente/cadastro.php" class="text-nav">SIGN-UP</a></li>
           </div>
           <div class="">
             <form class="d-flex" role="search" >

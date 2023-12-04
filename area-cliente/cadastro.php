@@ -17,16 +17,44 @@
 
 <body style="justify-content: center; align-items: center; height: 100vh;  " class="bg-dark">
   <div class="container col-xl-10 col-xxl-8 " style="height: 95vh; padding:8% 30px; background-color:'#ccc'">
-    <div class="row align-items-center g-lg-5 py-4  ">
-      <div class=" mx-auto">
+    <div class="row align-items-center g-lg-5 py-4">
+      <div class="mx-auto">
         <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" method="post" action="home.php">
-          <div class="form-floating mb-3">
-            <input type="text" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Email</label>
+          <div class="col-md-2 text-center">
+            <div class="d-flex flex-row">
+              <div class="bg-white rounded border mb-3" >
+                <img id="preview" src="../../img/user/<?=$imagem_User!="" ? $imagem_User : 'padrao.png';?>" alt="..."
+                  class="rounded  w-100" style="height:1000px; object-fit: cover; border:4px solid #ccc" >
+              </div>
+            
+            <div class="col-md-2 mb-3 px-3">
+              <input type="file" id="foto" name="foto" accept="image/*" class="custom-file-input">
+            </div>
           </div>
-          <div class="form-floating ">
-            <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">Password</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" name="nome" class="form-control" id="floatingInput" placeholder="Nome">
+            <label for="floatingInput">Nome</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" name="sobrenome" class="form-control" id="floatingPassword" placeholder="Sobrenome">
+            <label for="floatingPassword">Sobrenome</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" name="cpf" class="form-control" id="floatingPassword" placeholder="CPF">
+            <label for="floatingPassword">CPF</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="date" name="nasc" class="form-control" id="floatingPassword" placeholder="Data de nascimento">
+            <label for="floatingPassword">Data</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" name="email" class="form-control" id="floatingPassword" placeholder="Email">
+            <label for="floatingPassword">Email</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Senha">
+            <label for="floatingPassword">Senha</label>
           </div>
           <div class="checkbox mt-3 mb-2">
             <label>
