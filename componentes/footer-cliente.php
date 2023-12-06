@@ -23,9 +23,10 @@
       <h5>RASTREIO DE PEDIDOS</h5>
     </div>
     <div class="d-flex flex-column">
-      <h4>DÚVIDAS</h4>
-      <h5>PERGUNTAS FREQUENTES</h5>
-      <h5>COMO COMPRAR</h5>
+      <h4>ÁREA ADMINISTRATIVA</h4>
+      <a class="navbar-brand fs-5" style="color: #2BC016;" href="../area-admin/adm/index.php">
+      ADMIN
+      </a>
     </div>
     <div class="d-flex flex-column">
       <h4>CONTATO</h4>
