@@ -1,31 +1,47 @@
-<header class="p-3 text-bg-dark bg-transparent">
-  <div class="container">
-    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-      <a href="home.php" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
-        <img src="./../img/site/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+<header>
+  <nav class="navbar navbar-expand-lg d-flex flex-column" style="background-color: #353535;">
+    <div class="container-fluid d-flex w-100" style="justify-content: space-between;">
+      <a href="home.php" class="d-flex link-body-emphasis text-decoration-none start-0">
+        <img src="./../img/site/logo-nova.png" width="100" height="100" class="" alt="">
       </a>
-      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="home.php" class="nav-link px-2 text-white">Home</a></li>
-        <li><a href="filme.php" class="nav-link px-2 text-white">Jogos</a></li>
-        <li><a href="contato.php" class="nav-link px-2 text-white">Contatos</a></li>
-        <li><a href="sobre.php" class="nav-link px-2 text-white">Sobre</a></li>
-      </ul>
-      <div class="dropdown text-end">
-        <a href="#" class="text-white d-block link-body-emphasis text-decoration-none dropdown-toggle"
-          data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="./../img/user/<?=$authClient['img']? $authClient['img'] : 'padrao.png'?>" alt="mdo" width="32" height="32" class="rounded-circle">
-        </a>
-        <ul class="dropdown-menu text-small">
-          <a class="dropdown-item" href="#"><?=$authClient['nome']?></a>
-          <li><a class="dropdown-item" href="#">Perfil</a></li>
-          <li><a class="dropdown-item" href="favorito.php">Favoritos</a></li>
-
-          <li>
-            <hr class="dropdown-divider">
-          </li>
-          <li><a class="dropdown-item" href="logout.php">Sign out</a></li>
-        </ul>
+      <a href="#" class="text-white d-block link-body-emphasis text-decoration-none dropdown-toggle"
+      data-bs-toggle="dropdown" aria-expanded="false">
+      <img src="./../img/user/<?=$authClient['img']? $authClient['img'] : 'padrao.png'?>" alt="mdo" width="32" height="32" class="rounded-circle">
+      </a>
       </div>
-    </div>
-  </div>
+      <div class="w-100">
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 mb-md-0" style="justify-content: space-between;">
+            <li><a href="home.php" class="nav-link px-3 text-nav text-white">HOME</a></li>
+            <li><a href="jogo.php" class="nav-link px-3 text-nav text-white">JOGOS</a></li>
+            <li><a href="sobre.php" class="nav-link px-3 text-nav text-white">SOBRE</a></li>
+            <div style="margin-left: 10px; margin-right: 10px;"></div>
+            <div style="background-color: white; border-radius: 50px; padding-top: 7px" class="">
+              <li><a type="button" href="logout.php" class="text-nav" style="justify-content: center; align-items: center; color: red;">LOGOUT</a></li>
+            </div>
+            <div class="">
+              <form class="d-flex" role="search" >
+              <input class="form-control me-2 rounded" type="search" placeholder="Pesquisar..." aria-label="Search">
+              </form>
+            </div>
+          </ul>
+      </div>
+  </nav>
 </header>
+
+<style>
+
+.imagem{
+  
+object-fit: contain;
+margin-bottom: 10px;
+
+}
+
+.text-nav{
+  color: #2BC016; 
+  padding-left: 10px; 
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+</style>
