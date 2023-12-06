@@ -13,7 +13,7 @@
       <div class="dropdown text-end">
         <a href="#" class="text-white d-block link-body-emphasis text-decoration-none dropdown-toggle"
           data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="./../img/client/<?=$authClient['img']? $authClient['img'] : 'padrao.png'?>" alt="mdo" width="32" height="32" class="rounded-circle">
+          <img src="./../img/user/<?=$authClient['img']? $authClient['img'] : 'padrao.png'?>" alt="mdo" width="32" height="32" class="rounded-circle">
         </a>
         <ul class="dropdown-menu text-small">
           <a class="dropdown-item" href="#"><?=$authClient['nome']?></a>

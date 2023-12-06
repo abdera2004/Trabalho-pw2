@@ -7,7 +7,6 @@ $user = UserDao::checkCredentials($_POST['email'], $_POST['password']);
 
 if($user){
     $authClient = [
-        'id' => $user['idUser'],
         'nome' => $user['nomeUser'],
         'email' => $user['emailUser'],
         'img' => $user['imagemUser'],
