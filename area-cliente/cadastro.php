@@ -90,7 +90,7 @@
                     <label for="foto" class="btn btn-light mb-2">Carregar Imagem</label>
                     <img id="preview" src="../img/user/padrao.png" alt="..."
                       class="rounded w-100 mb-3" style="height: 150px; object-fit: cover;">
-                    <input type="file" id="foto" name="nomeFoto" accept="image/*" class="custom-file-input" style="display: none">
+                    <input type="file" id="foto" name="foto" accept="image/*" class="custom-file-input" style="display: none">
                 </div>
               </div>
             </div>
