@@ -1,9 +1,8 @@
 <?php
+
 require_once '../dao/UserDao.php';
-require_once '../model/Conexao.php';
 
 $user = UserDao::checkCredentials($_POST['email'], $_POST['password']);
-
 
 if($user){
     $authClient = [
@@ -18,7 +17,5 @@ if($user){
 }else{
         header("Location: login.php?status=erro1");  
 }
-
-
 
 ?>

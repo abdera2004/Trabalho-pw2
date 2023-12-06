@@ -16,10 +16,16 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body style="justify-content: center; align-items: center; height: 100vh ">
-      <?php 
-        include('./../componentes/header-cliente.php');
-      ?>
+<body style="justify-content: center; align-items: center; height: 100vh">
+<?php
+  session_start();
+  if(isset($_SESSION["authClient"])){
+  $authClient = $_SESSION["authClient"];
+  include('./../componentes/header-cliente-logado.php');
+  }else{
+    include('./../componentes/header-cliente.php');
+  }
+?>
   <div class="container-fluid container00" style="background-image: url(../img/site/fundo-neon.jpg);">
     <div class="container titlePadding" data-aos="fade-up" data-aos-duration="1500">
       <p class="h5" id="lauchComing">O melhor lugar para os gamers</p>
@@ -39,7 +45,7 @@
     </div>
   </div>
   <?php 
-      include('./../componentes/footer-cliente.php');
+    include('./../componentes/footer-cliente.php');
   ?>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">

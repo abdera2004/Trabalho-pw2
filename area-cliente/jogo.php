@@ -23,29 +23,34 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body style="justify-content: center; align-items: center; height: 100vh; background-image: url(../img/site/fundo-neon2.jpg);">
+<body style="justify-content: center; align-items: center; background-image: url(../img/site/fundo-neon2.jpg); overflow-x: hidden;">
 
 <?php
-  include('./../componentes/header-cliente.php');
+  session_start();
+  if(isset($_SESSION["authClient"])){
+  $authClient = $_SESSION["authClient"];
+  include('./../componentes/header-cliente-logado.php');
+  }else{
+    include('./../componentes/header-cliente.php');
+  }
 ?>
-  
-  <div class="container-fluid container00">
-    <div class="container" style="height: 70vh; ">
-      <div class="px-lg-5">
-        <div class="row py-5 justify-content-evenly ">
+
+    <div>
+      <div class="">
+        <div class="row py-5 justify-content-evenly">
           <!-- Gallery item -->
           <?php foreach($jogos as $jogo) { ?>
-            <div class="col-xxl-3 col-lg-3 col-md-6 mb-4 mt-3" style="width: 270px; height: 335px;">
-            <div class="bg-white rounded-4 shadow card " style="height: 100% ">
+            <div class="col-xxl-3 col-lg-3 col-md-6 mb-4 mt-3 m-1">
+            <div class="bg-white rounded-4 shadow-card" style="height: 100%;">
               <img src="../img/jogo/<?=$jogo[6]!=".jpg" ? $jogo[6] : 'padrao.png';?>" alt="" class="img-fluid card-img-top rounded-top-4" style="width: 100%; height: 50%;  object-fit: cover;">
               <div style="height: 50%">  
-                <div class=" text-center justify-content-center d-flex">
+                <div class="text-center justify-content-center d-flex">
                   <h6 class="card-title"><?=$jogo[1]?></h6>
                 </div>
                 <div class="justify-content-left px-2">
-                  <h7 class="" style="font-size: small; font-weight: bold;">Gênero: <?=$jogo[2]?></h6><br>
-                  <h7 class="" style="font-size: small; font-weight: bold;">Plataformas: <?=$jogo[3]?></h6><br>
-                  <h7 class="" style="font-size: small; font-weight: bold;">Tamanho: <?=$jogo[5]?></h6><br>
+                  <h7 class="" style="font-size: small; font-weight: bold;">Gênero: <?=$jogo[2]?></h7><br>
+                  <h7 class="" style="font-size: small; font-weight: bold;">Plataformas: <?=$jogo[3]?></h7><br>
+                  <h7 class="" style="font-size: small; font-weight: bold;">Tamanho: <?=$jogo[5]?></h7><br>
                 </div>
                 <div class="text-center justify-content-center d-flex">
                   <h6 class="card-title py-4" style="color: #2BC016; font-weight: bold; font-size: large;"><?=$jogo[4]?></h6>
@@ -54,10 +59,8 @@
             </div>
           </div>
           <?php } ?>
-        </div>
       </div>
-  </div>
-
+    </div>
 <?php
   include('./../componentes/footer-cliente.php');
 ?>

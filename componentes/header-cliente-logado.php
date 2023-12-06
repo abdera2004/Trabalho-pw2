@@ -6,8 +6,18 @@
       </a>
       <a href="#" class="text-white d-block link-body-emphasis text-decoration-none dropdown-toggle"
       data-bs-toggle="dropdown" aria-expanded="false">
-      <img src="./../img/user/<?=$authClient['img']? $authClient['img'] : 'padrao.png'?>" alt="mdo" width="32" height="32" class="rounded-circle">
+      <img src="./../img/user/<?=$authClient['img']? $authClient['img'] : 'padrao.png'?>" alt="mdo" width="100" height="100" class="rounded-circle">
       </a>
+      <ul class="dropdown-menu text-small">
+          <a class="dropdown-item" href="#"><?=$authClient['nome']?></a>
+          <li><a class="dropdown-item" href="#">Perfil</a></li>
+          <li><a class="dropdown-item" href="favorito.php">Favoritos</a></li>
+
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="logout.php">Sign out</a></li>
+        </ul>
       </div>
       <div class="w-100">
           <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 mb-md-0" style="justify-content: space-between;">
@@ -19,7 +29,7 @@
               <li><a type="button" href="logout.php" class="text-nav" style="justify-content: center; align-items: center; color: red;">LOGOUT</a></li>
             </div>
             <div class="">
-              <form class="d-flex" role="search" >
+              <form class="d-flex" role="search">
               <input class="form-control me-2 rounded" type="search" placeholder="Pesquisar..." aria-label="Search">
               </form>
             </div>

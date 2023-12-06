@@ -29,7 +29,7 @@
 </head>
 
 <body style="justify-content: center; align-items: center; background-image: url(../img/site/cadastro.jpg);" class="container00">
-  <div class="container-fluid container00">
+  <div class="container-fluid">
     <div class="container">
     <div class="p-3 border rounded-4" style="background-color: #CBEFB6;">
       <div class="text-center">

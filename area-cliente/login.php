@@ -46,7 +46,8 @@
             <input type="checkbox" value="remember-me"> Lembre de mim
           </label>
         </div>
-        <button class="w-100 btn btn-lg" style="background-color: #FFCF00;" type="submit">Logar</button>
+        <button class="w-100 btn btn-lg mb-2" style="background-color: #FFCF00;" type="submit">Logar</button>
+        <a class=" btn btn-primary px-3" role="button" aria-disabled="true" href="home.php">Voltar</i></a>
         <hr class="my-4">
         <small class="text-body-secondary">Ao clicar em Cadastre-se, você concorda com os termos de uso.</small>
       </form>
