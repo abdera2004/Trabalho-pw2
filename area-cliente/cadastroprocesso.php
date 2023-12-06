@@ -16,6 +16,7 @@ switch ($_POST["acao"]) {
     case 'SALVAR':
             //pode validar as informações
     $user->setNome($_POST['nome']);
+    $user->setSobrenome($_POST['sobrenome']);
     $user->setCpf($_POST['cpf']);
     $user->setNasc($_POST['nasc']);
     $user->setEmail($_POST['email']);
@@ -25,7 +26,7 @@ switch ($_POST["acao"]) {
     try {
       $userDao = UserDao::insert($user);
       $msg->setMensagem("Usuário Salvo com sucesso.", "bg-success");
-      header("Location: login.php");
+      header("Location: home.php");
     } catch (Exception $e) {
      echo 'Exceção capturada: ',  $e->getMessage(), "\n";
      $msg->setMensagem("Verifique os dados Digitados.", "bg-danger");

@@ -1,10 +1,9 @@
-<?php
-
-  require_once 'C:\xampp\htdocs\oi\Trabalho-pw2\model\Conexao.php';     
+<?php     
   session_start();
-  require_once("../componentes/modal.php");
 
-  //require_once '../dao/ClientDao.php';
+  require_once("../componentes/modal.php");
+  require_once '../dao/UserDao.php';
+
   if(!empty($_POST)){
     $id_User= $userDao['idUser'];
     $imagem_User = $userDao['imagemUser'];
@@ -90,7 +89,7 @@
                   <div class="bg-white rounded text-center">
                     <label for="foto" class="btn btn-light mb-2">Carregar Imagem</label>
                     <img id="preview" src="../img/user/padrao.png" alt="..."
-                    class="rounded w-100 mb-3 "  style="height: 150px; object-fit: cover;">
+                      class="rounded w-100 mb-3" style="height: 150px; object-fit: cover;">
                     <input type="file" id="foto" name="nomeFoto" accept="image/*" class="custom-file-input" style="display: none">
                 </div>
               </div>
