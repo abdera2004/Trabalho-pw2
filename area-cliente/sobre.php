@@ -51,7 +51,9 @@
 </script>
 
 </body>
-  <?php 
-      include('./../componentes/footer-cliente.php');
-  ?>
+
+<?php 
+  include('./../componentes/footer-cliente.php');
+?>
+
 </html>
