@@ -22,9 +22,9 @@
             </div>
             <div class="">
               <form class="d-flex" role="search">
-              <input class="form-control me-2 rounded-5" type="search" placeholder="Pesquisar..." aria-label="Search">
+                <input class="form-control me-2 rounded-5" type="search" placeholder="Pesquisar..." aria-label="Search">
               </form>
-              </div>
+            </div>
           </ul>
       </div>
   </nav>

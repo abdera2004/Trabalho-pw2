@@ -16,8 +16,14 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<?php 
-  include('./../componentes/header-cliente.php');
+<?php
+  session_start();
+  if(isset($_SESSION["authClient"])){
+  $authClient = $_SESSION["authClient"];
+  include('./../componentes/header-cliente-logado.php');
+  }else{
+    include('./../componentes/header-cliente.php');
+  }
 ?>
 
 <body style="justify-content: center; align-items: center; height: 100vh; background-image: url(../img/site/fundo-neon4.jpg);">
