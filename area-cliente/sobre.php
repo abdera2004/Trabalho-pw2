@@ -33,7 +33,7 @@
         </div>
         <div class="card-body mb-5">
 
-          <p style="text-align: center; color: white;" class="fs-5">Somos uma empresa voltada para a venda de jogos eletronicos, onde buscamos sempre oferecer um servico de qualidade aos nossos clientes, valorizando os principios eticos e sempre priorizando a satisfacao e o bem-estar dos mesmos.</p>
+          <p style="text-align: center; color: white;" class="fs-5">Somos uma empresa voltada para a venda de jogos eletrônicos, onde buscamos sempre oferecer um serviço de qualidade aos nossos clientes, valorizando os princípios éticos e sempre priorizando a satisfação e o bem-estar dos mesmos.</p>
 
         </div>
 
