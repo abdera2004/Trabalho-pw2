@@ -40,7 +40,7 @@
         <div class="">
           <h3 class="text-white mb-5">DESENVOLVIDO POR:</h3>
           <img src="./../img/site/ruan.jpeg" alt="mdo" width="169" height="169" class="rounded-circle align-text-center">
-          <text class="fs-3 text-white">RUAN SANTOS PEREIRA</text>
+          <text class="fs-3 text-white px-3">RUAN SANTOS PEREIRA</text>
         </div>
       </div>
     </div>
