@@ -26,39 +26,30 @@
     <div class="container">
 
     </div>
-    <div class="container " style="height: 70vh; ">
-      <div class="card w-100 shadow bg-transparent" style=" opacity:0.9; margin: 0 auto">
-        <div class="card-header text-center ">
-          <h1 class="display-5">O QUE É A CONTROL GAMES?</h1>
+    <div class="container" style="height: 70vh;">
+      <div class="w-100 shadow bg-transparent">
+        <div class="card-header text-center mt-5 mb-5">
+          <h1 class="display-5" style="color: white;">O QUE É A CONTROL GAMES?</h1>
         </div>
-        <div class="card-body">
+        <div class="card-body mb-5">
 
-          <p class="justify-content-center">Este Website é um veículo de informações, sugestões, recomendações, dicas e resenhas
-            de filmes e conteúdo. Nenhuma parte do conteúdo disponibilizado por meio deste Website deve ser interpretada
-            como aconselhamento profissional. O Website poderá ser atualizado diariamente por profissionais da Indústria
-            do Entretenimento e Conteúdo Digital, e, dentre outras funcionalidades, inscrição em newsletter, em
-            notificação de lançamentos, de criar listas e estabelecer preferências de caráter opcional exclusivo aos
-            Usuários</p>
+          <p style="text-align: center; color: white;" class="fs-5">Somos uma empresa voltada para a venda de jogos eletronicos, onde buscamos sempre oferecer um servico de qualidade aos nossos clientes, valorizando os principios eticos e sempre priorizando a satisfacao e o bem-estar dos mesmos.</p>
 
-          <p class="justify-content-center"> O Website é expressamente desassociado do conteúdo de links, publicidade e outros
-            serviços vinculados e não endossa seus conteúdos como próprios. Na medida em que o Website obtenha
-            conhecimento de algum conteúdo ilegal de um link, publicidade ou outro serviço vinculado, garantirá a
-            remoção do tal link, publicidade ou outro serviço correspondente.</p>
+        </div>
 
-          <p class="justify-content-center">Para utilizar este Website, o Usuário deve ler atentamente todos os Termos de Uso e
-            Política de Dados e Privacidade e concordar plenamente com suas disposições, utilizando o formulário
-            apropriado disponível no Website. Caso o Usuário não concorde com os Termos de Uso e Política de Dados e
-            Privacidade ou qualquer outra regra aplicável ao Website, deverá atestar expressamente por meio do
-            formulário apropriado disponível no Website e se abster de utilizá-lo.</p>
+        <div class="">
+          <h3 class="text-white mb-5">DESENVOLVIDO POR:</h3>
+          <img src="./../img/site/ruan.jpeg" alt="mdo" width="169" height="169" class="rounded-circle align-text-center">
+          <text class="fs-3 text-white">RUAN SANTOS PEREIRA</text>
         </div>
       </div>
     </div>
   </div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+</script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
-  </script>
 </body>
   <?php 
       include('./../componentes/footer-cliente.php');
