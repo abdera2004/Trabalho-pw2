@@ -32,17 +32,6 @@
       header("Location: register.php");
     } 
     break;
-  case 'ATUALIZAR':
-        //pode validar as informações
-        $plataforma->setDesc($_POST['nome']);
-        try {
-          $plataformaDao = PlataformaDao::update($_POST["codPlataformaJogo"], $plataforma);
-          $msg->setMensagem("Usuário Atualizado com sucesso.", "bg-success");
-          header("Location: index.php");
-        } catch (Exception $e) {
-         echo 'Exceção capturada: ',  $e->getMessage(), "\n";
-        } 
-    break;
 
   case 'SELECTID':
 

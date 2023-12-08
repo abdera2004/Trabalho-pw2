@@ -27,7 +27,7 @@
       <?php 
       include('./../../componentes/menu-adm.php');
       ?>
-      <div class="col-md-10 p-4 borber">
+      <div class="col-md-10 p-4 border">
         <div class="row align-items-center mb-4">
           <div class="col fs-3 fw-semibold">
             Lista de plataformas
@@ -37,14 +37,13 @@
                 class="fas fa-plus" aria-hidden="true"></i></a>
           </div>
         </div>
-        <div class=" row">
+        <div class="row">
           <table class="table table-hover">
             <thead>
               <tr>
                 <th class="col-md-1">Cod</th>
                 <th class="col-md-1">Nome</th>
-                <th class="text-center col-md-1">Alterar</th>
-                <th class="text-center col-md-1">Excluir</th>
+                <th class="col-md-1">Excluir</th>
               </tr>
               <?php foreach($plataformas as $plataforma) { ?>
               <tr>
@@ -54,12 +53,9 @@
                   <form action="process.php" method="POST">
                     <input type="hidden" class="form-control" id="acao" name="acao" value="SELECTID">
                     <input type="hidden" class="form-control" id="id" name="id" value="<?=$plataforma[0]?>">
-                    <button type="submit" class="dropdown-item" ><i
-                        class="fas fa-edit fa-lg text-secondary"></i>
-                    </button>
                   </form>
                 </td>
-                <td class="text-center ">
+                <td class="text-center col-md-2">
                   <a class="dropdown-item" onclick="modalRemover(<?=$plataforma[0]?>,'idDeletar')">
                     <i class="fas fa-trash-alt fa-lg text-danger" style="cursor: pointer;"></i>
                   </a>

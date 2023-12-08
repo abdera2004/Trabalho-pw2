@@ -2,13 +2,13 @@
   require_once("../../componentes/modal.php");
   require_once '../../dao/CompraDao.php';
   if(!empty($_POST)){
-    $id_Compra = $compraDao['idCompra'];
-    $qtd_Compra =  $compraDao['qtdCompra'];
-    $valor_Compra = $compraDao['valorCompra'];
+    $id_Compra = $compraDao['codCompra'];
+    $qtd_Compra =  $compraDao['qtdJogosCompra'];
+    $valor_Compra = $compraDao['valorTotalCompra'];
     $data_Compra = $compraDao['dataCompra'];
-    $pag_Compra = $compraDao['pagCompra'];
+    $pag_Compra = $compraDao['formaPagamento'];
     $status_Compra = $compraDao['statusCompra'];
-    $nome_Compra = $compraDao['nomeCompra'];
+    $nome_Compra = $compraDao['nomeJogo'];
     }else{
         $qtd_Compra = '';
         $valor_Compra = '';

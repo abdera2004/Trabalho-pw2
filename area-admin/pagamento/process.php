@@ -32,17 +32,6 @@
       header("Location: register.php");
     } 
     break;
-  case 'ATUALIZAR':
-        //pode validar as informações
-        $pagamento->setDesc($_POST['nome']);
-        try {
-          $pagamentoDao = PagamentoDao::update($_POST['codPagamento'], $pagamento);
-          $msg->setMensagem("Usuário Atualizado com sucesso.", "bg-success");
-          header("Location: index.php");
-        } catch (Exception $e) {
-         echo 'Exceção capturada: ',  $e->getMessage(), "\n";
-        } 
-    break;
 
   case 'SELECTID':
 

@@ -43,7 +43,6 @@
               <tr>
                 <th class="col-md-1">ID</th>
                 <th class="col-md-1">Nome</th>
-                <th class="text-center col-md-1">Alterar</th>
                 <th class="text-center col-md-1">Excluir</th>
               </tr>
               <?php foreach($pagamentos as $pagamento) { ?>
@@ -54,12 +53,9 @@
                   <form action="process.php" method="POST">
                     <input type="hidden" class="form-control" id="acao" name="acao" value="SELECTID">
                     <input type="hidden" class="form-control" id="id" name="id" value="<?=$pagamento[0]?>">
-                    <button type="submit" class="dropdown-item" ><i
-                        class="fas fa-edit fa-lg text-secondary"></i>
-                    </button>
                   </form>
                 </td>
-                <td class="text-center ">
+                <td class="text-center">
                   <a class="dropdown-item" onclick="modalRemover(<?=$pagamento[0]?>,'idDeletar')">
                     <i class="fas fa-trash-alt fa-lg text-danger" style="cursor: pointer;"></i>
                   </a>

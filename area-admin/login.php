@@ -19,7 +19,7 @@
   <div class="container col-xl-10 col-xxl-8 " style="height: 95vh; padding:8% 30px; background-color:'#ccc'">
     <div class="row align-items-center g-lg-5 py-4  ">
       <div class="col-lg-7 text-center text-lg-start">
-        <img src="./../img/site/logo.png" class="rounded mx-auto d-block" alt="..." style="width:40%">
+        <img src="./../img/site/logo-nova.png" class="rounded mx-auto d-block" alt="..." style="width:40%">
         <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3 text-center">Control Games</h1>
         <p class="col-lg-10 fs-5 text-center w-100 display-4 fw-bold lh-1">Painel Adminstrativo</p>
       </div>
