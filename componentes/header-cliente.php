@@ -4,8 +4,8 @@
       <a href="home.php" class="d-flex link-body-emphasis text-decoration-none start-0">
         <img src="./../img/site/logo-nova.png" width="100" height="100" class="" alt="">
       </a>
-      <img src="./../img/site/codmw3.jpeg" width="400" height="70" class="d-inline-block align-top imagem" alt="">
-      <img src="./../img/site/re4.jpg" width="400" height="70" class="d-inline-block align-top imagem" alt="">
+      <img src="./../img/site/cod.jpg" width="400" height="70" class="d-inline-block align-top imagem" alt="">
+      <img src="./../img/site/forza.jpg" width="400" height="70" class="d-inline-block align-top imagem" alt="">
       <img src="./../img/site/spider-man2.jpg" width="400" height="70" class="d-inline-block align-top imagem" alt="">
       </div>
       <div class="w-100">
