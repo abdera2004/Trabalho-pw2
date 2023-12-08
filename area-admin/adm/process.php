@@ -62,7 +62,7 @@
   case 'SELECTID':
 
     try {
-        $admDao = UserDao::selectById($_POST['id']);
+        $admDao = AdmDao::selectById($_POST['id']);
         // Configura as opções do contexto da solicitação
         include('register.php');
     } catch (Exception $e) {

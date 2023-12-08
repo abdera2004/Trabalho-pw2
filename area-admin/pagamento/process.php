@@ -36,7 +36,7 @@
         //pode validar as informações
         $pagamento->setDesc($_POST['nome']);
         try {
-          $pagamentoDao = PagamentoDao::update($_POST["codPagamento"], $pagamento);
+          $pagamentoDao = PagamentoDao::update($_POST['codPagamento'], $pagamento);
           $msg->setMensagem("Usuário Atualizado com sucesso.", "bg-success");
           header("Location: index.php");
         } catch (Exception $e) {
@@ -47,7 +47,7 @@
   case 'SELECTID':
 
     try {
-        $pagamentoDao = PagamentoDao::selectById($_POST["codPagamento"]);
+        $pagamentoDao = PagamentoDao::selectById($_POST['codPagamento']);
         // Configura as opções do contexto da solicitação
         include('register.php');
     } catch (Exception $e) {

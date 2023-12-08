@@ -10,7 +10,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Control Games | Adm</title>
-  <link rel="short icon" href="./../../img/site/logo.png" />
+  <?php
+  include('C:\xampp\htdocs\oi\Trabalho-pw2\componentes\titulo.php');
+  ?>
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- icon -->
@@ -88,7 +90,7 @@
           <h1 class="modal-title fs-5" id="exampleModalLabel">Excluir Usuário</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body  ">
+        <div class="modal-body">
           <form action="process.php" method="post">
             <input type="hidden" class="form-control" id="idDeletar" name="idDeletar" type="text">
             <input type="hidden" class="form-control" value="DELETE" name="acao" type="text">

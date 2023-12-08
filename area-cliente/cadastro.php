@@ -20,7 +20,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Control Games | Cadastro</title>
-  <link rel="short icon" href="./../img/site/logo.png" />
+  <?php
+  include('./../componentes/titulo.php');
+  ?>
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- icon -->

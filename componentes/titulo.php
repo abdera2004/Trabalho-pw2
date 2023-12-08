@@ -1,1 +1,1 @@
-<link rel="short icon" href="../img/site/icone2.png"/>
+<link rel="short icon" href="../img/site/icone.png"/>
