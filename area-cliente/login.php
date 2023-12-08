@@ -30,7 +30,7 @@
     
     <!-- Segunda div ocupando a outra metade da tela (col-md-6) -->
     <div class="col-md-6 centralizado">
-      <form class="border rounded-4" style="background-color: #CBEFB6" method="post" action="home.php">
+      <form class="border rounded-4" style="background-color: #CBEFB6" method="post" action="processalogin.php">
         <h1 class="p-1">BEM-VINDO(A) DE VOLTA!</h1>
         <hr class="opacity-100" style="width: 100%;">
         <div class="form-floating mb-3 mx-3">

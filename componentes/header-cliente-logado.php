@@ -6,7 +6,7 @@
       </a>
       <a href="#" class="text-white d-block link-body-emphasis text-decoration-none dropdown-toggle"
       data-bs-toggle="dropdown" aria-expanded="false">
-      <img src="./../img/user/<?=$authClient['img']? $authClient['img'] : 'padrao.png'?>" alt="mdo" width="100" height="100" class="rounded-circle">
+      <img src="./../img/user/<?=$authClient['img']? $authClient['img'] : 'padrao.png'?>" alt="mdo" width="90" height="90" class="rounded-circle">
       </a>
       <ul class="dropdown-menu text-small">
           <a class="dropdown-item" href="#"><?=$authClient['nome']?></a>
@@ -30,7 +30,7 @@
             </div>
             <div class="">
               <form class="d-flex" role="search">
-              <input class="form-control me-2 rounded" type="search" placeholder="Pesquisar..." aria-label="Search">
+              <input class="form-control me-2 rounded-5" type="search" placeholder="Pesquisar..." aria-label="Search">
               </form>
             </div>
           </ul>
