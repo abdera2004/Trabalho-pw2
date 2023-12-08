@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body style="justify-content: center; align-items: center; background-image: url(../img/site/fundo-neon2.jpg); overflow-x: hidden;">
+<body style="justify-content: center; align-items: center; background-image: url(../img/site/fundo-verde.jpg); overflow-x: hidden;">
 
 <?php
   session_start();

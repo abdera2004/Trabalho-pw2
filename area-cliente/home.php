@@ -26,7 +26,7 @@
     include('./../componentes/header-cliente.php');
   }
 ?>
-  <div class="container-fluid container00" style="background-image: url(../img/site/fundo-neon.jpg);">
+  <div class="container-fluid container00" style="background-image: url(../img/site/fundo-verde.jpg);">
     <div class="container titlePadding" data-aos="fade-up" data-aos-duration="1500">
       <p class="h5" id="lauchComing">O melhor lugar para os gamers</p>
       <p class="h1">Os melhores games da atualidade!</p>

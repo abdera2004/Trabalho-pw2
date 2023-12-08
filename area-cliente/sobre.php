@@ -26,14 +26,14 @@
   }
 ?>
 
-<body style="justify-content: center; align-items: center; height: 100vh; background-image: url(../img/site/fundo-neon4.jpg);">
+<body style="justify-content: center; align-items: center; height: 100vh; background-color: #454545;">
 
   <div class="container-fluid h-100 container00 container01">
     <div class="container">
 
     </div>
     <div class="container" style="height: 70vh;">
-      <div class="w-100 shadow bg-transparent">
+      <div class="w-100 bg-transparent">
         <div class="card-header text-center mt-5 mb-5">
           <h1 class="display-5" style="color: white;">O QUE É A CONTROL GAMES?</h1>
         </div>
