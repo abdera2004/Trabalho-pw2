@@ -29,27 +29,27 @@
     </div>
     
     <!-- Segunda div ocupando a outra metade da tela (col-md-6) -->
-    <div class="col-md-6 centralizado ">
-      <form class="p-3 border rounded-4" style="background-color: #CBEFB6" method="post" action="home.php">
-        <h1>BEM-VINDO(A) DE VOLTA!</h1>
-        <hr class="opacity-100 " style="width: 100%;">
-        <div class="form-floating mb-3">
+    <div class="col-md-6 centralizado">
+      <form class="border rounded-4" style="background-color: #CBEFB6" method="post" action="home.php">
+        <h1 class="p-1">BEM-VINDO(A) DE VOLTA!</h1>
+        <hr class="opacity-100" style="width: 100%;">
+        <div class="form-floating mb-3 mx-3">
           <input type="text" name="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
           <label for="floatingInput">Email</label>
         </div>
-        <div class="form-floating ">
+        <div class="form-floating mx-3">
           <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password" required>        
           <label for="floatingPassword">Senha</label>
         </div>
-        <div class="checkbox mt-3 mb-2">
+        <div class="checkbox mt-3 mb-2 mx-3">
           <label>
             <input type="checkbox" value="remember-me"> Lembre de mim
           </label>
         </div>
-        <button class="w-100 btn btn-lg mb-2" style="background-color: #FFCF00;" type="submit">Logar</button>
+        <button class="w-50 btn btn-lg mb-2 mx-3" style="background-color: #FFCF00;" type="submit">Logar</button>
         <a class=" btn btn-primary px-3" role="button" aria-disabled="true" href="home.php">Voltar</i></a>
         <hr class="my-4">
-        <small class="text-body-secondary">Ao clicar em Cadastre-se, você concorda com os termos de uso.</small>
+        <small class="text-body-secondary p-1">Ao clicar em Cadastre-se, você concorda com os termos de uso.</small>
       </form>
     </div>
   </div>
