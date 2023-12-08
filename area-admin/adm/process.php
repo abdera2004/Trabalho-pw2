@@ -9,6 +9,12 @@
   //var_dump($_POST); 
 
 
+  session_start();
+  if(isset($_SESSION["authAdm"])){
+  $authAdm = $_SESSION["authAdm"];
+  }
+
+
  switch ($_POST["acao"]) {
   case 'DELETE':
    try {

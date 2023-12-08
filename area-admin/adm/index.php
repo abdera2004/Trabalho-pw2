@@ -5,14 +5,16 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
-
+<?php
+  session_start();
+  if(isset($_SESSION["authAdm"])){
+  $authAdm = $_SESSION["authAdm"];
+  }
+?>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Control Games | Adm</title>
-  <?php
-  include('C:\xampp\htdocs\oi\Trabalho-pw2\componentes\titulo.php');
-  ?>
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- icon -->

@@ -6,6 +6,13 @@
  $jogo = new Jogo();
  $msg = new Mensagem();
 
+ 
+ session_start();
+ if(isset($_SESSION["authAdm"])){
+ $authAdm = $_SESSION["authAdm"];
+ }
+
+
  switch ($_POST["acao"]) {
   case 'DELETE':
    try {

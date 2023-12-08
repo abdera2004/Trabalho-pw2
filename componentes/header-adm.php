@@ -11,14 +11,14 @@
       <div class="dropdown text-end">
         <a href="#" class="text-white d-block link-body-emphasis text-decoration-none dropdown-toggle"
           data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="./../../img/user/padrao.png" alt="mdo" width="32" height="32" class="rounded-circle">
+          <img src="./../img/adm/<?=$authAdm['img']? $authAdm['img'] : 'padrao.png'?>" alt="mdo" width="32" height="32" class="rounded-circle">
         </a>
         <ul class="dropdown-menu text-small">
           <li><a class="dropdown-item" href="#">Perfil</a></li>
           <li>
             <hr class="dropdown-divider">
           </li>
-          <li><a class="dropdown-item" href="#">Sign out</a></li>
+          <li><a class="dropdown-item" href="logoutadm.php">Sign out</a></li>
         </ul>
       </div>
     </div>

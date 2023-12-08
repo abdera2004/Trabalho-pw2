@@ -1,5 +1,5 @@
 <?php
-    require_once '../../model/Conexao.php';
+    require_once 'C:\xampp\htdocs\oi\Trabalho-pw2\model\Conexao.php';
     
     class AdmDao{
         public static function insert($adm){
@@ -64,7 +64,7 @@
         }
         public static function checkCredentials($email, $senha){
             $conexao = Conexao::conectar();
-            $query = "SELECT * FROM tbuser WHERE emailUser = ? and passwordUser = ?";
+            $query = "SELECT * FROM tbadm WHERE emailAdm = ? and passwordAdm = ?";
             $stmt = $conexao->prepare($query);
             $stmt->bindValue(1, $email);
             $stmt->bindValue(2, $senha);

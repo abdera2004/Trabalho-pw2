@@ -5,7 +5,7 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
-
+  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +32,7 @@
     
     <!-- Segunda div ocupando a outra metade da tela (col-md-6) -->
     <div class="col-md-6 centralizado ">
-      <form class="p-3 border rounded-4" style="background-color: #CBEFB6" method="post" action="home.php">
+      <form class="p-3 border rounded-4" style="background-color: #CBEFB6" method="post" action="processaloginadm.php">
         <div class="form-floating mb-3">
           <input type="text" name="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
           <label for="floatingInput">Email</label>
@@ -43,12 +43,10 @@
         </div>
         <div class="checkbox mt-3 mb-2">
           <label>
-            <input type="checkbox" value="remember-me"> Lembre de mim
+            <input type="checkbox" value="remember-me">Lembre de mim
           </label>
         </div>
         <button class="w-100 btn btn-lg mb-2" style="background-color: #FFCF00;" type="submit">Logar</button>
-        <hr class="my-4">
-        <small class="text-body-secondary">Ao clicar em Cadastre-se, você concorda com os termos de uso.</small>
       </form>
     </div>
   </div>

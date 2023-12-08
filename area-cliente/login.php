@@ -43,7 +43,7 @@
         </div>
         <div class="checkbox mt-3 mb-2 mx-3">
           <label>
-            <input type="checkbox" value="remember-me"> Lembre de mim
+            <input type="checkbox" value="remember-me">Lembre de mim
           </label>
         </div>
         <button class="w-50 btn btn-lg mb-2 mx-3" style="background-color: #FFCF00;" type="submit">Logar</button>
