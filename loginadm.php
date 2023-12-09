@@ -1,6 +1,6 @@
 <?php 
   session_start();
-  require_once("../componentes/modal.php");
+  require_once("componentes/modal.php");
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Control Games | Login</title>
   <?php
-  include('./../componentes/titulo.php');
+  include('componentes/titulo.php');
   ?>
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -25,7 +25,7 @@
   <div class="row mx-auto">
     <!-- Primeira div ocupando metade da tela (col-md-6) -->
     <div class="col-md-6 centralizado d-flex flex-column">
-      <img src="../img/site/logo-nova.png" style="width: 250px; height: 250px">
+      <img src="img/site/logo-nova.png" style="width: 250px; height: 250px">
       <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3 text-center">Control Games</h1>
       <p class="col-lg-10 fs-5 text-center w-100 display-4 fw-bold lh-1">Painel Adminstrativo</p>
     </div>
@@ -47,6 +47,7 @@
           </label>
         </div>
         <button class="w-100 btn btn-lg mb-2" style="background-color: #FFCF00;" type="submit">Logar</button>
+        <a class=" btn btn-primary px-3" role="button" aria-disabled="true" href="area-cliente/home.php">Voltar</i></a>
       </form>
     </div>
   </div>

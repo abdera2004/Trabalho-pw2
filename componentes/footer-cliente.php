@@ -24,7 +24,7 @@
     </div>
     <div class="d-flex flex-column">
       <h4>ÁREA ADMINISTRATIVA</h4>
-      <a class="navbar-brand fs-5" style="color: #2BC016;" href="../area-admin/login.php">
+      <a class="navbar-brand fs-5" style="color: #2BC016;" href="../loginadm.php">
       ADMIN
       </a>
     </div>
