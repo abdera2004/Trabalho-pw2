@@ -31,7 +31,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Control Games | Cadastro</title>
+  <title>Control Games | Editar perfil</title>
   <?php
   include('./../componentes/titulo.php');
   ?>
@@ -71,19 +71,19 @@
 
                 <div class="col-md-6">
                     <label for="sobrenome" class="col-form-label ">Sobrenome:</label>
-                    <input type="text" class="form-control" name="sobrenome" maxlength="50" id="sobrenome" required>
+                    <input type="text" class="form-control" name="sobrenome" maxlength="50" id="sobrenome" value="<?=$sobrenome_User?>" required>
                 </div>
 
                 <div class="col-md-6">
                 <label for="cpf" class="col-form-label ">CPF:</label>
-                    <input type="text" data-mask="000.000.000-00" data-mask-selectonfocus="true" class="form-control" name="cpf" maxlength="50" id="cpf" required>
+                    <input type="text" data-mask="000.000.000-00" data-mask-selectonfocus="true" value="<?=$cpf_User?>" class="form-control" name="cpf" maxlength="50" id="cpf" required>
                 </div>
 
               <div class="row">
 
                 <div class="col-md-6">
                     <label for="nasc" class="col-form-label">Data de Nascimento:</label>
-                    <input type="date"  class="form-control" name="nasc" maxlength="50" id="nasc" required>
+                    <input type="date"  class="form-control" name="nasc" maxlength="50" id="nasc" value="<?=$nasc_User?>" required>
                 </div>
 
               </div>
@@ -91,18 +91,18 @@
 
                 <div class="col-md-6">
                     <label for="email" class="col-form-label">Email:</label>
-                    <input type="email" class="form-control" name="email" maxlength="50" id="email" required>
+                    <input type="email" class="form-control" name="email" maxlength="50" id="email" value="<?=$email_User?>" required>
                 </div>
 
               </div>
 
                 <div class="col-md-6">
-                    <label for="password" class="col-form-label">Senha:</label>
-                    <input type="password" class="form-control" name="password" maxlength="50" id="password" required>
+                    <label for="password" class="col-form-label">Nova senha:</label>
+                    <input type="password" class="form-control" name="password" maxlength="50" id="password" value="<?=$password_User?>" required>
                 </div>
 
                 <div class="col-md-6">
-                <label for="passwordconf" class="col-form-label">Confirmar Senha:</label>
+                <label for="passwordconf" class="col-form-label">Confirmar senha:</label>
                     <input type="password" class="form-control" name="passwordconf" maxlength="50" id="passwordconf" required>
                 </div><br>
             </div>
