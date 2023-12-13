@@ -9,10 +9,6 @@
     //var_dump($_POST);
 switch ($_POST["acao"]) {
 
-
-    case 'ATUALIZAR':
-        echo 'Atualizar';
-    break;
     case 'SALVAR':
             //pode validar as informações
     $user->setNome($_POST['nome']);

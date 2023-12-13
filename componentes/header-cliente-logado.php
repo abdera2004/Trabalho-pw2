@@ -10,7 +10,7 @@
       </a>
       <ul class="dropdown-menu text-small">
           <a class="dropdown-item" href="#"><?=$authClient['nome']?></a>
-          <li><a class="dropdown-item" href="#">Perfil</a></li>
+          <li><a class="dropdown-item" href="editarperfil.php">Perfil</a></li>
           <li><a class="dropdown-item" href="favorito.php">Favoritos</a></li>
 
           <li>
